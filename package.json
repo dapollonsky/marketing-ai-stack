@@ -1,6 +1,6 @@
 {
   "name": "marketing-ai-stack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "A curated list of AI tools, MCP servers, and Claude Code skills that plug into the tools marketers already use — and automate marketing work, not just assist it.",
@@ -18,9 +18,7 @@
     "build": "node scripts/build.js",
     "refresh:stats": "node scripts/fetch-stats.js",
     "check:links": "node scripts/link-check.js",
-    "check": "npm run validate && npm run build && npm run check:links",
-    "site:dev": "cd site && npm run dev",
-    "site:build": "cd site && npm install && npm run build"
+    "check": "npm run validate && npm run build && npm run check:links"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

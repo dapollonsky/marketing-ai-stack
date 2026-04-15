@@ -1,16 +1,10 @@
 name: Contentful MCP
 slug: contentful-mcp
-kind: repo
 url: https://github.com/contentful/contentful-mcp-server
 repo: https://github.com/contentful/contentful-mcp-server
 category: integrations
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

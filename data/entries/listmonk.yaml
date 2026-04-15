@@ -1,16 +1,10 @@
 name: listmonk
 slug: listmonk
-kind: repo
 url: https://listmonk.app
 repo: https://github.com/knadh/listmonk
 category: email
 tags:
   type: app
-  personas:
-    - marketer
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: substrate
   mcp_ready: false
 description: >-

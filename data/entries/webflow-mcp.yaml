@@ -1,16 +1,10 @@
 name: Webflow MCP
 slug: webflow-mcp
-kind: repo
 url: https://github.com/webflow/mcp-server
 repo: https://github.com/webflow/mcp-server
 category: integrations
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

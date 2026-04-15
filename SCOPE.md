@@ -67,13 +67,14 @@ The default failure mode for any list like this is entropy. These principles exi
 
 - **`why_it_matters` is mandatory and specific.** One sentence naming persona, task, and outcome. Marketing adjectives get rejected.
 - **`closed_alternative` is mandatory unless genuinely none exists.** Name the incumbent — Jasper, Buffer, Mailchimp, Ahrefs, Clay, SEMrush. `null` is rare and scrutinized.
-- **Automated nightly pruning.** `scripts/fetch-stats.js` refreshes stars, last commit, and license for every `kind=repo` entry. Stale entries get flagged.
+- **Automated nightly pruning.** `scripts/fetch-stats.js` refreshes stars, last commit, and license for every entry with a repo URL. Stale entries get flagged.
 - **Editorial judgement over breadth.** Two strong entries beat ten mediocre ones.
+- **Minimal schema.** Three required tag fields — `type`, `ai_nativeness`, `mcp_ready`. Friction per submission is deliberately low so contributors don't bail halfway.
 
 ## Removal policy
 
 - **Upstream archived** → status flipped to `archived`, hidden from default views.
-- **No commits in 180 days and not tagged `reference`** → moved to `watchlist` for curator review; may return to `active` or age out.
+- **No commits in 180 days** → moved to `watchlist` for curator review; may return to `active` or age out.
 - **Broken links** → automated PR opened by CI; curator fixes or removes.
 - **Scope drift** (project pivots away from marketing) → removed with a note in the commit history.
 

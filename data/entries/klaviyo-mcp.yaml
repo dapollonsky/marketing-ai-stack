@@ -1,16 +1,10 @@
 name: Klaviyo MCP Server
 slug: klaviyo-mcp
-kind: repo
 url: https://github.com/mattcoatsworth/Klaviyo-MCP-Server
 repo: https://github.com/mattcoatsworth/Klaviyo-MCP-Server
 category: email
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss-mcp-only
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

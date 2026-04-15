@@ -26,18 +26,13 @@ Kebab-case. Must match the YAML filename without `.yaml`.
 - **Good:** `postiz` (file: `data/entries/postiz.yaml`)
 - **Bad:** `Postiz_App` — wrong case, wrong separator.
 
-### `kind`
-One of `repo`, `hosted`, or `docs`.
-- **Good:** `repo` for Postiz on GitHub; `hosted` for a SaaS that ships an open MCP server.
-- **Bad:** `repo` on a closed SaaS with no source available.
-
 ### `url`
 Product home page or main docs. Must resolve.
 - **Good:** `https://postiz.com`
 - **Bad:** `https://github.com/gitroomhq/postiz-app/blob/main/README.md#install` — deep link.
 
 ### `repo`
-GitHub repo URL. Required when `kind=repo`.
+GitHub repo URL. `null` is allowed for hosted services without an open component.
 - **Good:** `https://github.com/gitroomhq/postiz-app`
 - **Bad:** `https://gitroom.com` — that is a company page.
 
@@ -45,7 +40,13 @@ GitHub repo URL. Required when `kind=repo`.
 Exactly one of the eight categories in [SCOPE.md](./SCOPE.md). No cross-posting.
 
 ### `tags`
-Six required keys: `type`, `personas`, `openness`, `maturity`, `ai_nativeness`, `mcp_ready`. `personas` draws from `marketer`, `gtm-eng`, and `founder` — not `sdr-ae` (that's a sales persona).
+Three required keys:
+
+- **`type`** — one of `mcp`, `aggregator`, `agent`, `app`, `framework`, `skill-pack`, `template`, `cms`, `crm`, `library`.
+- **`ai_nativeness`** — one of `ai-native`, `ai-enabled`, `substrate`. See [SCOPE.md](./SCOPE.md) for the distinction.
+- **`mcp_ready`** — boolean. `true` if the project is or ships an MCP server.
+
+That's it. No persona arrays, no maturity enum, no openness taxonomy — kept deliberately minimal so friction-per-submission is low.
 
 ### `description`
 One sentence, 10–280 chars. What it is.
@@ -100,7 +101,7 @@ Name the commercial product the prospective user would otherwise buy — a one-n
 ```bash
 npm install
 npm run validate   # schema + dedup check
-npm run build      # regenerates README.md and site data
+npm run build      # regenerates README.md
 ```
 
 ## PR review checklist

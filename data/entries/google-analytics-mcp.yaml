@@ -1,17 +1,10 @@
 name: Google Analytics MCP
 slug: google-analytics-mcp
-kind: repo
 url: https://github.com/googleanalytics/google-analytics-mcp
 repo: https://github.com/googleanalytics/google-analytics-mcp
 category: analytics
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

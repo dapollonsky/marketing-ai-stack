@@ -1,16 +1,10 @@
 name: Open Scouts
 slug: open-scouts
-kind: repo
 url: https://openscouts.firecrawl.dev
 repo: https://github.com/firecrawl/open-scouts
 category: research
 tags:
   type: agent
-  personas:
-    - marketer
-    - founder
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

@@ -1,17 +1,10 @@
 name: PostHog MCP
 slug: posthog-mcp
-kind: repo
 url: https://posthog.com/docs/model-context-protocol
 repo: https://github.com/PostHog/mcp
 category: analytics
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

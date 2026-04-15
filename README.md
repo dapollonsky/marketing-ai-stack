@@ -125,4 +125,4 @@ _Archived upstream — kept for historical reference._
 - **[PostHog MCP](https://github.com/PostHog/mcp)** — Lets a growth marketer ask "which landing page converted best last week?" inside Claude and get a narrated answer with the underlying funnel, replacing a tab-juggling session in the PostHog UI.
 
 ---
-🌐 [Site](https://dapollonsky.github.io/marketing-ai-stack/) · 🔀 [gtm-ai-stack](https://github.com/dapollonsky/gtm-ai-stack) (broader GTM view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)
+🔀 [gtm-ai-stack](https://github.com/dapollonsky/gtm-ai-stack) (broader GTM view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)

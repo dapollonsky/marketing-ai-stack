@@ -1,16 +1,10 @@
 name: Robyn
 slug: robyn
-kind: repo
 url: https://facebookexperimental.github.io/Robyn/
 repo: https://github.com/facebookexperimental/Robyn
 category: analytics
 tags:
   type: library
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: substrate
   mcp_ready: false
 description: >-
