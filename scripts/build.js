@@ -53,6 +53,17 @@ const CATEGORIES = [
   },
 ];
 
+const CATEGORY_EMOJI = {
+  content: '✍️',
+  seo: '🔍',
+  social: '📱',
+  ads: '💰',
+  email: '📬',
+  analytics: '📊',
+  research: '🔭',
+  integrations: '🔌',
+};
+
 const TYPE_LABEL = {
   mcp: 'MCP',
   aggregator: 'Aggregator',
@@ -71,15 +82,6 @@ const AI_LABEL = {
   'ai-enabled': 'AI-enabled',
   substrate: 'Substrate',
 };
-
-function slugifyAnchor(s) {
-  return s
-    .toLowerCase()
-    .replace(/&/g, '')
-    .replace(/[^\w\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-');
-}
 
 function formatStars(n) {
   if (n == null) return '—';
@@ -128,12 +130,12 @@ function renderCategorySection(cat, entries) {
     if (sb !== sa) return sb - sa;
     return a.name.localeCompare(b.name);
   });
+  const emoji = CATEGORY_EMOJI[cat.id] || '';
   return [
-    `## ${cat.title}`,
+    `<a id="${cat.id}"></a>`,
+    `### ${emoji} ${cat.title}`,
     '',
-    cat.blurb,
-    '',
-    '| Project | Type | AI | MCP | Stars | Last commit | Why it matters |',
+    '| Project | Type | AI | MCP | ⭐ | 🔄 | Why |',
     '|---|---|---|---|---|---|---|',
     sorted.map(renderEntryRow).join('\n'),
     '',
@@ -153,36 +155,40 @@ async function main() {
 
   const toc = CATEGORIES
     .filter((c) => byCategory[c.id].length > 0)
-    .map((c) => `- [${c.title}](#${slugifyAnchor(c.title)}) — ${byCategory[c.id].length}`);
-  if (watchlist.length > 0) toc.push('- [Watchlist](#watchlist)');
-  if (archived.length > 0) toc.push('- [Archive](#archive)');
+    .map((c) => `- [${CATEGORY_EMOJI[c.id]} ${c.title}](#${c.id}) — ${byCategory[c.id].length}`);
+  if (watchlist.length > 0) toc.push('- [⚠️ Watchlist](#watchlist)');
+  if (archived.length > 0) toc.push('- [📦 Archive](#archive)');
 
-  const sections = CATEGORIES.map((c) => renderCategorySection(c, byCategory[c.id])).filter(Boolean);
+  const sections = CATEGORIES
+    .map((c) => renderCategorySection(c, byCategory[c.id]))
+    .filter(Boolean);
 
   const watchlistSection = watchlist.length
     ? [
-        '## Watchlist',
+        '<a id="watchlist"></a>',
+        '### ⚠️ Watchlist',
         '',
-        'Projects listed but not fully endorsed — stale maintenance, ToS risk, very early, or otherwise requiring caution.',
+        '_Flagged but not fully endorsed — stale maintenance, ToS risk, very early._',
         '',
         ...watchlist
           .slice()
           .sort((a, b) => a.name.localeCompare(b.name))
-          .map((e) => `- [${e.name}](${e.repo || e.url}) — ${e.why_it_matters}`),
+          .map((e) => `- **[${e.name}](${e.repo || e.url})** — ${e.why_it_matters}`),
         '',
       ].join('\n')
     : '';
 
   const archivedSection = archived.length
     ? [
-        '## Archive',
+        '<a id="archive"></a>',
+        '### 📦 Archive',
         '',
-        'Previously listed projects, now archived upstream or no longer maintained. Kept for historical reference.',
+        '_Archived upstream — kept for historical reference._',
         '',
         ...archived
           .slice()
           .sort((a, b) => a.name.localeCompare(b.name))
-          .map((e) => `- [${e.name}](${e.repo || e.url}) — ${e.why_it_matters}`),
+          .map((e) => `- **[${e.name}](${e.repo || e.url})** — ${e.why_it_matters}`),
         '',
       ].join('\n')
     : '';
@@ -190,56 +196,48 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
 
   const md = [
-    '# Marketing AI Stack',
+    '```text',
+    '███╗   ███╗ █████╗ ██████╗ ██╗  ██╗███████╗████████╗██╗███╗   ██╗ ██████╗',
+    '████╗ ████║██╔══██╗██╔══██╗██║ ██╔╝██╔════╝╚══██╔══╝██║████╗  ██║██╔════╝',
+    '██╔████╔██║███████║██████╔╝█████╔╝ █████╗     ██║   ██║██╔██╗ ██║██║  ███╗',
+    '██║╚██╔╝██║██╔══██║██╔══██╗██╔═██╗ ██╔══╝     ██║   ██║██║╚██╗██║██║   ██║',
+    '██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗███████╗   ██║   ██║██║ ╚████║╚██████╔╝',
+    '╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝',
+    '          █████╗ ██╗    ███████╗████████╗ █████╗  ██████╗██╗  ██╗',
+    '         ██╔══██╗██║    ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝',
+    '         ███████║██║    ███████╗   ██║   ███████║██║     █████╔╝ ',
+    '         ██╔══██║██║    ╚════██║   ██║   ██╔══██║██║     ██╔═██╗ ',
+    '         ██║  ██║██║    ███████║   ██║   ██║  ██║╚██████╗██║  ██╗',
+    '         ╚═╝  ╚═╝╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    '       ░▒▓  tools that plug into a marketer\'s daily stack  ▓▒░',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    '```',
     '',
-    '**AI tools, MCP servers, and Claude Code skills that plug into the tools marketers already use — and automate marketing work.**',
+    `🎯 **${active.length} active** · ⚠️ **${watchlist.length} watchlist** · 📦 **${archived.length} archived** · 🔄 built ${today}`,
     '',
-    `${active.length} active · ${watchlist.length} watchlist · ${archived.length} archived · built ${today}`,
+    '> Generated from [`data/entries/*.yaml`](data/entries) — open a PR against a YAML entry, not this file.',
     '',
-    '> This README is generated from [`data/entries/*.yaml`](data/entries). Do not edit it directly — open a PR against a YAML entry and CI will rebuild.',
+    '## ⚡ What',
     '',
-    '## What this is',
+    'AI tools, MCP servers, and Claude Code skills that plug into the tools marketers already use — Google Ads, GA4, Notion, HubSpot, Webflow, Mailchimp, Search Console — and **automate marketing work**.',
     '',
-    'An opinionated, curated list of AI tools that plug into the tools marketers already use — Google Ads, GA4, Notion, HubSpot, Webflow, Mailchimp, Search Console — and automate marketing work, not just assist it. Every entry has to answer one question: **what specific marketing task does this automate, and who benefits?**',
+    '**Not** sales · **Not** support · **Not** AI-washed SaaS',
     '',
-    'The list is organised around the marketer\'s daily workflow, not the broader GTM funnel. Sales, customer success, and RevOps forecasting are explicitly out of scope — see [`gtm-ai-stack`](https://github.com/dapollonsky/gtm-ai-stack) for the wider view.',
+    '→ [`SCOPE.md`](SCOPE.md) · [`CONTRIBUTING.md`](CONTRIBUTING.md)',
     '',
-    'Three tiers live side-by-side:',
-    '',
-    '1. **Integrations & substrate** — MCP servers and platforms that connect the marketer\'s existing tools (HubSpot, GA4, Webflow, Notion) to Claude, Cursor, and other agents.',
-    '2. **Agents & apps** — End-user tools that automate specific marketing jobs: content drafting, social scheduling, paid campaign management, competitor research.',
-    '3. **Skill packs & templates** — Claude Code skills and CrewAI/n8n templates — ready-to-install recipes for common marketing workflows.',
-    '',
-    'What this is **not**: an AI-tool dump. See [`SCOPE.md`](SCOPE.md) for the editorial constitution and [`CONTRIBUTING.md`](CONTRIBUTING.md) to submit an entry.',
-    '',
-    '## Why this exists',
-    '',
-    'Most "AI for marketing" lists are either flat SaaS directories or broad GTM/agent catalogues. Neither is useful to a marketer trying to answer "what can I install this week to automate X?" This list applies a stricter test: every entry must integrate into a real marketer\'s daily workflow, automate actual work (not just add an AI sidebar), and be usable without a dedicated engineering team — a non-engineering marketer with moderate technical comfort should be productive with it within a week.',
-    '',
-    '## Site',
-    '',
-    'A searchable, filterable version of this list: **[dapollonsky.github.io/marketing-ai-stack](https://dapollonsky.github.io/marketing-ai-stack/)** _(live once GitHub Pages is enabled)_.',
-    '',
-    '## Contents',
+    '## 🗺️ The stack',
     '',
     toc.join('\n'),
+    '',
+    '---',
     '',
     sections.join('\n'),
     watchlistSection,
     archivedSection,
-    '## Editorial',
+    '---',
     '',
-    '- **[SCOPE.md](SCOPE.md)** — the editorial constitution (what is in, what is out, and why)',
-    '- **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to submit, schema reference, PR rules',
-    '- **License** — code under [MIT](LICENSE); entry data under [CC-BY-SA 4.0](LICENSE-DATA)',
-    '',
-    '## Relationship to gtm-ai-stack',
-    '',
-    'This is a stricter, marketer-first subset of [`dapollonsky/gtm-ai-stack`](https://github.com/dapollonsky/gtm-ai-stack). The parent list covers sales and GTM plumbing in addition to marketing. If your question is "what can a marketer install tomorrow?" you\'re in the right place; if your question is "what\'s happening in AI for go-to-market broadly?" the parent list is broader.',
-    '',
-    '## Acknowledgements',
-    '',
-    'Prior work that informed scoping: [Specter — AI × GTM Landscape 2025](https://insights.tryspecter.com/ai-x-gtm-landscape-2025/), [joylarkin/Awesome-AI-Market-Maps](https://github.com/joylarkin/Awesome-AI-Market-Maps), [jmedia65/awesome-ai-marketing](https://github.com/jmedia65/awesome-ai-marketing), and the broader MCP community.',
+    '🌐 [Site](https://dapollonsky.github.io/marketing-ai-stack/) · 🔀 [gtm-ai-stack](https://github.com/dapollonsky/gtm-ai-stack) (broader GTM view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)',
     '',
   ]
     .filter((x) => x !== '')
