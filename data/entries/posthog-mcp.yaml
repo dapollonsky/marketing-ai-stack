@@ -1,0 +1,29 @@
+name: PostHog MCP
+slug: posthog-mcp
+kind: repo
+url: https://posthog.com/docs/model-context-protocol
+repo: https://github.com/PostHog/mcp
+category: analytics
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - gtm-eng
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official PostHog MCP server exposing events, funnels, cohorts, insights, and feature flags to
+  MCP-compatible agents.
+why_it_matters: >-
+  Lets a growth marketer ask "which landing page converted best last week?" inside Claude and get a
+  narrated answer with the underlying funnel, replacing a tab-juggling session in the PostHog UI.
+closed_alternative: PostHog UI
+stats:
+  stars: 143
+  last_commit: '2026-01-19'
+  license: MIT
+submitted: '2026-04-15'
+status: archived

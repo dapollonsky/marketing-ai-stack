@@ -1,0 +1,29 @@
+name: Google Analytics MCP
+slug: google-analytics-mcp
+kind: repo
+url: https://github.com/googleanalytics/google-analytics-mcp
+repo: https://github.com/googleanalytics/google-analytics-mcp
+category: analytics
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - gtm-eng
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Google's official Model Context Protocol server for GA4, exposing reports, dimensions, and metrics
+  over the Data API to MCP-compatible agents.
+why_it_matters: >-
+  Lets a growth marketer ask plain-English questions about sessions, conversions, and acquisition
+  channels from Claude instead of building Explorations in the GA4 UI.
+closed_alternative: GA4 Explorations UI
+stats:
+  stars: 1847
+  last_commit: '2026-04-08'
+  license: Apache-2.0
+submitted: '2026-04-15'
+status: active

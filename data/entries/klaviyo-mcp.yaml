@@ -1,0 +1,28 @@
+name: Klaviyo MCP Server
+slug: klaviyo-mcp
+kind: repo
+url: https://github.com/mattcoatsworth/Klaviyo-MCP-Server
+repo: https://github.com/mattcoatsworth/Klaviyo-MCP-Server
+category: email
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - gtm-eng
+  openness: oss-mcp-only
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Community-built Model Context Protocol server that wraps the Klaviyo REST API for use from Claude,
+  Cursor, and other MCP-compatible agents.
+why_it_matters: >-
+  Lets a lifecycle marketer create flows, build segments, and trigger campaigns from a chat agent
+  until Klaviyo ships an official server, closing the gap between briefs and shipped sends.
+closed_alternative: Klaviyo native UI
+stats:
+  stars: 6
+  last_commit: '2025-03-31'
+  license: null
+submitted: '2026-04-15'
+status: watchlist

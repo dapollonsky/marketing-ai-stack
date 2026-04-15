@@ -1,0 +1,28 @@
+name: Contentful MCP
+slug: contentful-mcp
+kind: repo
+url: https://github.com/contentful/contentful-mcp-server
+repo: https://github.com/contentful/contentful-mcp-server
+category: integrations
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official Contentful MCP server for the Contentful Management API, giving agents access to spaces,
+  content types, entries, and assets.
+why_it_matters: >-
+  Lets a marketing team query, draft, and publish headless CMS entries from any MCP-compatible agent
+  so localization edits and campaign updates do not require shuttling tickets through engineering.
+closed_alternative: Contentful web app
+stats:
+  stars: 50
+  last_commit: '2026-04-14'
+  license: MIT
+submitted: '2026-04-15'
+status: active

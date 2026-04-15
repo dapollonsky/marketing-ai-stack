@@ -1,0 +1,28 @@
+name: Robyn
+slug: robyn
+kind: repo
+url: https://facebookexperimental.github.io/Robyn/
+repo: https://github.com/facebookexperimental/Robyn
+category: analytics
+tags:
+  type: library
+  personas:
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: substrate
+  mcp_ready: false
+description: >-
+  Meta Marketing Science's experimental open-source Marketing Mix Modeling package built on ridge
+  regression, Nevergrad optimization, and time-series decomposition.
+why_it_matters: >-
+  Gives a performance marketer a defensible first-party MMM to allocate paid spend across channels
+  without buying a six-figure consulting engagement from a legacy MMM vendor.
+closed_alternative: Nielsen MMM, Analytic Partners
+stats:
+  stars: 1445
+  last_commit: '2026-01-26'
+  license: MIT
+submitted: '2026-04-15'
+status: active
