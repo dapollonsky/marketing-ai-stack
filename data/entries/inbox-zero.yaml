@@ -15,8 +15,8 @@ why_it_matters: >-
   user replies so the inbox stops being the bottleneck on response time.
 closed_alternative: Superhuman, SaneBox
 stats:
-  stars: 10455
-  last_commit: '2026-04-15'
+  stars: 10458
+  last_commit: '2026-04-16'
   license: NOASSERTION
 submitted: '2026-04-15'
 status: active
