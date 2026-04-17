@@ -3,38 +3,38 @@
   ┃┃┃┣━┫┣┳┛┣┻┓┣╸  ┃ ┃┃┗┫┃╺┓╺━╸┣━┫┃╺━╸┗━┓ ┃ ┣━┫┃  ┣┻┓
   ╹ ╹╹ ╹╹┗╸┗━┛┗━┛ ╹ ╹╹ ╹┗━┛   ╹ ╹╹   ┗━┛ ╹ ╹ ╹┗━╸╹ ╹
 ```
-> One canonical open-source pick per marketing job.
-This list curates 18 open-source tools, MCP servers, and Claude skills that do marketing work end-to-end. Entries are grouped by the 8 workflows a marketer actually runs: research, positioning, content, SEO, social, paid, lifecycle, and measurement. Each workflow contains atomic jobs like keyword research, ad copy variants, or inbox triage. Each job gets 1 canonical pick. 14 more jobs sit as open slots because no OSS version exists yet.
-**How we pick.** Every candidate runs through 3 filters: it fits a daily marketing workflow, it automates the work instead of assisting it, and a non-engineering marketer can install it in under a week. When 2 tools serve meaningfully different personas for the same job, one is canonical and the other lands as an alternate. Everything else goes in [rejected/](rejected/) with the reasoning and a "reconsider if" clause. Picks are re-reviewed quarterly.
-**How to contribute.** Open a PR against a YAML file in [data/entries/](data/entries/). The README is auto-generated from those files. Full rules in [CONTRIBUTING.md](CONTRIBUTING.md).
+_A running list of open-source tools that try to do marketing work end-to-end. One pick per job, where we can find one._
+This list collects 18 open-source tools, MCP servers, and Claude skills grouped by the 8 workflows marketers tend to run: research, positioning, content, SEO, social, paid, lifecycle, and measurement. Each workflow breaks down into smaller jobs like keyword research, ad copy variants, or inbox triage. Where we found a pick we're happy to recommend, it's listed as the canonical. 14 jobs don't have a canonical yet and are marked open.
+**How we try to pick.** We look for tools that (1) fit a daily marketing workflow, (2) do the work itself rather than just suggest it, and (3) can be installed by a non-engineering marketer in under a week. When 2 tools serve meaningfully different use cases, we list both. Tools we considered and passed on go in [rejected/](rejected/) with our reasoning, so you can disagree out loud if we got one wrong. We try to re-review picks quarterly.
+**How to help.** If a pick is wrong, a tool we missed should be here, or an open slot has been filled, open a PR against a YAML file in [data/entries/](data/entries/) and the README regenerates from there. Full flow in [CONTRIBUTING.md](CONTRIBUTING.md). Corrections welcome.
 ## The shortlist
 | Job | Install | Cancels |
 |---|---|---|
 | Competitor monitoring | [Open Scouts](https://github.com/firecrawl/open-scouts) | Crayon |
-| Customer-voice extraction | [noScribe](https://github.com/kaixxx/noScribe) | Otter.ai |
-| Market scans | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | Perplexity Pro |
+| Customer interviews | [noScribe](https://github.com/kaixxx/noScribe) | Otter.ai |
+| Market research | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | Perplexity Pro |
 | Briefs, messaging, battlecards | [Anthropic Marketing Plugin](https://github.com/anthropics/knowledge-work-plugins) | Jasper Brand Voice |
-| Long-form drafts | [ALwrity](https://github.com/AJaySi/ALwrity) | Jasper |
+| Long blog posts | [ALwrity](https://github.com/AJaySi/ALwrity) | Jasper |
 | Keyword research | [DataForSEO MCP](https://github.com/dataforseo/mcp-server-typescript) | Semrush |
-| On-page SEO audit | [SEO & GEO Claude Skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills) | Surfer SEO |
-| Technical SEO crawl | [LibreCrawl](https://github.com/PhialsBasement/LibreCrawl) | Screaming Frog |
-| GEO / AEO citation tracking | [GEO AI Agent](https://github.com/brightdata/geo-ai-agent) | Profound |
-| Multi-channel scheduling | [Postiz](https://github.com/gitroomhq/postiz-app) | Buffer |
-| Long video → shorts | [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | Submagic |
+| On-page SEO audits | [SEO & GEO Claude Skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills) | Surfer SEO |
+| Site crawls | [LibreCrawl](https://github.com/PhialsBasement/LibreCrawl) | Screaming Frog |
+| Tracking LLM mentions | [GEO AI Agent](https://github.com/brightdata/geo-ai-agent) | Profound |
+| Social scheduling | [Postiz](https://github.com/gitroomhq/postiz-app) | Buffer |
+| Long video to shorts | [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | Submagic |
 | Ad copy variants | [claude-ads](https://github.com/AgriciDaniel/claude-ads) | Copy.ai |
 | Ad creative variants | [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | AdCreative.ai |
-| Budget rebalancing | [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp) | Meta Ads Manager UI |
+| Ad budget management | [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp) | Meta Ads Manager UI |
 | A/B test analysis | [GrowthBook](https://github.com/growthbook/growthbook) | Optimizely |
 | Inbox triage | [Inbox Zero](https://github.com/elie222/inbox-zero) | Superhuman |
-| Analytics narration | [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) | GA4 Explorations UI |
-| Performance reports (MMM) | [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing) | Nielsen MMM |
+| Analytics summaries | [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) | GA4 Explorations UI |
+| Performance reports | [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing) | Nielsen MMM |
 ## Open slots
 
-14 marketing jobs still run on closed tools. Clay covers ICP discovery. Dreamdata covers attribution narration. Profound covers GEO tracking. Surfer covers decay audits. Modash covers creator outreach. An OSS version of any of these lands on the list the day it ships.
+14 marketing jobs where we haven't found an OSS pick we're comfortable recommending yet. Closed tools tend to own these today (Clay for ICP discovery, Dreamdata for attribution, Profound for LLM citation tracking, Surfer for content updates, Modash for creator outreach). If you know of an OSS tool that fits, or you're building one, open a PR and we'll take a look.
 
-ICP discovery · ICP / persona docs · Refresh / decay audits · Repurposing · Case studies · Internal linking · Creator outreach · Community reply · Landing pages from brief · Welcome / nurture sequences · List segmentation · Newsletter production · Deliverability watchdog · Attribution narration.
+ICP discovery · Customer personas · Updating old posts · Repurposing content · Case studies · Internal linking · Creator outreach · Community replies · Landing pages from a brief · Welcome email sequences · Email list segmentation · Newsletter writing · Deliverability monitoring · Attribution summaries.
 
-See [rejected/](rejected/) for everything evaluated and the reasoning for why it didn't land.
+Things we looked at and passed on live in [rejected/](rejected/) with our reasoning.
 ---
 ## Why each pick won
 <details>
@@ -50,7 +50,7 @@ See [rejected/](rejected/) for everything evaluated and the reasoning for why it
 
 <sub>🗑️ [Rejected candidates](rejected/competitor-monitoring.md)</sub>
 
-### Customer-voice extraction
+### Customer interviews
 
 **Canonical:** [noScribe](https://github.com/kaixxx/noScribe). Local-first interview transcription with speaker diarization and a usable review editor. No cloud hop for sensitive customer calls. Everything downstream (themes, quotes, pain points) is a single LLM pass. <sub>🟢 Automate</sub>
 
@@ -65,7 +65,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/icp-discovery.md)</sub>
 
-### Market scans
+### Market research
 
 **Canonical:** [GPT Researcher](https://github.com/assafelovic/gpt-researcher). Autonomous research agent that does tree-like topic exploration and returns a citation-backed brief. 26k stars, actively maintained. Describe the market area, get a structured report back. <sub>🟢 Automate</sub>
 
@@ -100,7 +100,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/battlecard.md)</sub>
 
-### ICP / persona docs
+### Customer personas
 
 _No canonical yet._
 
@@ -111,7 +111,7 @@ _No canonical yet._
 <details>
 <summary>✍️ <strong>Content production</strong> (canonicals + alternates)</summary>
 
-### Long-form drafts
+### Long blog posts
 
 **Canonical:** [ALwrity](https://github.com/AJaySi/ALwrity). Self-hosted blog drafting that ships the full pipeline: research, outline, SEO scoring, publish. 1 Streamlit app, 20-minute install. <sub>🟡 Augment</sub>
 
@@ -120,13 +120,13 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/long-form-drafting.md)</sub>
 
-### Refresh / decay audits
+### Updating old posts
 
 _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/refresh-decay-audit.md)</sub>
 
-### Repurposing
+### Repurposing content
 
 _No canonical yet._
 
@@ -152,13 +152,13 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/keyword-research.md)</sub>
 
-### On-page SEO audit
+### On-page SEO audits
 
 **Canonical:** [SEO & GEO Claude Skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills). Focused Claude skill pack with 20 SEO and GEO skills. On-page auditor runs against a URL from Claude Code with an EEAT and CITE scoring rubric. Narrow scope by design. <sub>🟢 Automate</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/on-page-seo-audit.md)</sub>
 
-### Technical SEO crawl
+### Site crawls
 
 **Canonical:** [LibreCrawl](https://github.com/PhialsBasement/LibreCrawl). Screaming Frog replacement. MIT-licensed, unlimited URLs, full technical coverage for redirects, canonicals, schema, and Core Web Vitals. Runs as desktop or web app. <sub>🟢 Automate</sub>
 
@@ -168,7 +168,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/technical-seo-crawl.md)</sub>
 
-### GEO / AEO citation tracking
+### Tracking LLM mentions
 
 **Canonical:** [GEO AI Agent](https://github.com/brightdata/geo-ai-agent). Tracks how a brand shows up in ChatGPT, Perplexity, and Gemini answers over time. Bright Data scraper under a CrewAI loop. Category is still unsettled, so expect this entry to move as better tools ship. <sub>🟡 Augment</sub>
 
@@ -188,7 +188,7 @@ _No canonical yet._
 <details>
 <summary>📱 <strong>Social & video</strong> (canonicals + alternates)</summary>
 
-### Multi-channel scheduling
+### Social scheduling
 
 **Canonical:** [Postiz](https://github.com/gitroomhq/postiz-app). Self-hosted social scheduler across X, LinkedIn, Instagram, TikTok, YouTube, Threads, and Bluesky. Content history and analytics stay on the team's own infrastructure. Settled atom. <sub>🟢 Automate</sub>
 
@@ -198,7 +198,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/multi-channel-scheduling.md)</sub>
 
-### Long video → shorts
+### Long video to shorts
 
 **Canonical:** [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo). One-click AI short-video pipeline. Script, TTS, stock footage, subtitles, output. 55k stars, the category leader by a 100x margin. <sub>🟢 Automate</sub>
 
@@ -214,7 +214,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/creator-outreach.md)</sub>
 
-### Community reply
+### Community replies
 
 _No canonical yet._
 
@@ -237,7 +237,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/ad-creative-variants.md)</sub>
 
-### Budget rebalancing
+### Ad budget management
 
 **Canonical:** [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp). Meta Business Partner-approved MCP for Facebook and Instagram ads. Clean API path and compliant credentials matter once an agent actually moves budget. <sub>🟡 Augment · 🔌 MCP</sub>
 
@@ -247,7 +247,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/budget-rebalancing.md)</sub>
 
-### Landing pages from brief
+### Landing pages from a brief
 
 _No canonical yet._
 
@@ -264,19 +264,19 @@ _No canonical yet._
 <details>
 <summary>📬 <strong>Lifecycle & email</strong> (canonicals + alternates)</summary>
 
-### Welcome / nurture sequences
+### Welcome email sequences
 
 _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/welcome-nurture-sequence.md)</sub>
 
-### List segmentation
+### Email list segmentation
 
 _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/list-segmentation.md)</sub>
 
-### Newsletter production
+### Newsletter writing
 
 _No canonical yet._
 
@@ -291,7 +291,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/inbox-triage.md)</sub>
 
-### Deliverability watchdog
+### Deliverability monitoring
 
 _No canonical yet._
 
@@ -302,7 +302,7 @@ _No canonical yet._
 <details>
 <summary>📊 <strong>Measurement</strong> (canonicals + alternates)</summary>
 
-### Analytics narration
+### Analytics summaries
 
 **Canonical:** [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp). Google's official GA4 MCP server. Exposes reports, dimensions, and metrics over the Data API. Pairs with a weekly-summary skill for plain-English funnel stories. <sub>🟢 Automate · 🔌 MCP</sub>
 
@@ -311,7 +311,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/analytics-narration.md)</sub>
 
-### Attribution narration
+### Attribution summaries
 
 _No canonical yet._
 
@@ -323,7 +323,7 @@ _No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/landing-page-test-analysis.md)</sub>
 
-### Performance reports (MMM)
+### Performance reports
 
 **Canonical:** [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing). Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC. Python-native, actively developed by PyMC Labs. Media-saturation and adstock transforms baked in. <sub>🟡 Augment</sub>
 
