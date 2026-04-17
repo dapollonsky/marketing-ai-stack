@@ -348,7 +348,7 @@ async function main() {
     '',
     openSlots.length > 0
       ? `## Open slots\n\n${openSlots.length} marketing jobs where we haven't found an OSS pick we're comfortable recommending yet. Closed tools tend to own these today (Clay for ICP discovery, Dreamdata for attribution, Profound for LLM citation tracking, Surfer for content updates, Modash for creator outreach). If you know of an OSS tool that fits, or you're building one, open a PR and we'll take a look.\n\n${openSlots.join(' · ')}.\n\nThings we looked at and passed on live in [rejected/](rejected/) with our reasoning.`
-      : '',
+      : null,
     '',
     '---',
     '',
@@ -375,7 +375,7 @@ async function main() {
     '[Scope](SCOPE.md) · [Contributing](CONTRIBUTING.md) · [gtm-ai-stack](https://github.com/dapollonsky/gtm-ai-stack) · [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)',
     '',
   ]
-    .filter((x) => x !== '')
+    .filter((x) => x !== null && x !== undefined)
     .join('\n');
 
   await fs.writeFile(README_PATH, md + '\n', 'utf8');
