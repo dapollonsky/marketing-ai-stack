@@ -14,9 +14,8 @@ description: >-
   Self-hosted social scheduler with built-in AI generation across X, LinkedIn, Instagram, TikTok,
   YouTube, Threads, and Bluesky.
 why_it_matters: >-
-  The clearest "replace Buffer" OSS story — 9× Mixpost's stars, covers every channel a modern
-  founder posts to, and keeps the content history and analytics on the team's own infrastructure.
-  Settled atom.
+  Self-hosted social scheduler across X, LinkedIn, Instagram, TikTok, YouTube, Threads, and
+  Bluesky. Content history and analytics stay on the team's own infrastructure. Settled atom.
 closed_alternative: Buffer, Hootsuite, Typefully
 stats:
   stars: 28621

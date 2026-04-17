@@ -14,9 +14,8 @@ description: >-
   Autonomous research agent that does tree-like exploration of a topic area and returns a
   citation-backed structured report.
 why_it_matters: >-
-  The most-adopted OSS deep-research agent — a marketer describes the market area, gets a
-  structured brief with sources, and skips the afternoon of tab-juggling. Sets the bar others are
-  measured against.
+  Autonomous research agent that does tree-like topic exploration and returns a citation-backed
+  brief. 26k stars, actively maintained. Describe the market area, get a structured report back.
 closed_alternative: Perplexity Pro, ChatGPT Deep Research
 stats:
   stars: 26500

@@ -14,9 +14,8 @@ description: >-
   Agent-to-agent mail layer exposed as an MCP server — think thread-based coordination primitive
   for Claude Code and other agents rather than a Gmail UI.
 why_it_matters: >-
-  Different persona from Inbox Zero — the pick when the job is letting multiple agents coordinate
-  over mail-like threads, not triaging a human inbox. Emerging pattern for Claude Code-heavy
-  marketing teams.
+  Agent-to-agent mail layer exposed as an MCP server. For teams letting multiple agents
+  coordinate over mail-like threads rather than triaging a human inbox.
 closed_alternative: Slack huddles, Notion
 stats:
   stars: 1900

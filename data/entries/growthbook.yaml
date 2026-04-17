@@ -14,9 +14,8 @@ description: >-
   Open-source experimentation platform with Bayesian and frequentist engines, CUPED, sequential
   testing, and an official MCP server for agent-driven analysis.
 why_it_matters: >-
-  Settled winner for LP and funnel A/B testing — proper stats, ships its own MCP for agents to
-  summarize experiments and declare winners, and no OSS competitor is remotely close. Pair with
-  any copy-variant skill.
+  Bayesian and frequentist experimentation platform with CUPED, sequential testing, SRM checks,
+  and an official MCP. Handles LP and funnel tests end-to-end. Settled atom.
 closed_alternative: Optimizely, VWO, Statsig, Eppo
 stats:
   stars: 7663

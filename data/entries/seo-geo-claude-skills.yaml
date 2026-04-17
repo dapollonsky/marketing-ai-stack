@@ -14,9 +14,8 @@ description: >-
   Focused Claude skill pack (~20 skills) for SEO and GEO, including a first-class on-page auditor
   with an explicit EEAT + CITE scoring rubric.
 why_it_matters: >-
-  The only OSS pack that ships an opinionated on-page audit runnable against a URL from Claude
-  Code — skills-native, not a port of a 2018 CLI. Narrow scope is a feature; it competes only
-  within SEO and wins the atom.
+  Focused Claude skill pack with 20 SEO and GEO skills. On-page auditor runs against a URL from
+  Claude Code with an EEAT and CITE scoring rubric. Narrow scope by design.
 closed_alternative: Surfer SEO, Clearscope
 stats:
   stars: 1040

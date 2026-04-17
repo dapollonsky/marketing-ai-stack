@@ -14,9 +14,9 @@ description: >-
   CrewAI template that edits long-form video into viral clips through transcription, highlight
   selection, and cutting agents.
 why_it_matters: >-
-  The cleanest reference architecture for a video-repurposing agent — different deployment model
-  from MoneyPrinter (template, not product). Author notes it's "vibe-coded," so fork it, don't
-  expect upstream progress.
+  CrewAI template for transcription, highlight selection, and cutting agents. A reference
+  pattern for custom video pipelines, not a shipped product. Author describes it as
+  "vibe-coded," so expect to maintain any fork yourself.
 closed_alternative: Opus Clip, Vizard
 stats:
   stars: 755

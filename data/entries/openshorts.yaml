@@ -14,8 +14,8 @@ description: >-
   OSS clip-from-existing-video app with YouTube Studio integration, no watermarks, and LLM-driven
   highlight selection.
 why_it_matters: >-
-  Different tradeoff from MoneyPrinter — clip from real long-form video (podcasts, YouTube) rather
-  than synthesize from a keyword. The pick for repurposing existing content, not spinning up new.
+  Clips existing long-form video into shorts with YouTube Studio integration and no watermarks.
+  For podcast and YouTube repurposing rather than topic-from-scratch generation.
 closed_alternative: OpusClip, Vizard, Submagic
 stats:
   stars: 434

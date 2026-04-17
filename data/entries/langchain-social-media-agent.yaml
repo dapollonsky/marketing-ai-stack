@@ -14,9 +14,8 @@ description: >-
   LangGraph-based sourcing and drafting agent with human-in-the-loop approval over Slack for
   cross-posting to LinkedIn and X.
 why_it_matters: >-
-  Different persona from Postiz — not a scheduler, a sourcing + drafting agent with approval
-  queues. The pick when the job is "generate + curate" rather than "plan a calendar," and the
-  team wants review before sends.
+  LangGraph sourcing and drafting agent with Slack human-in-the-loop approval. For teams that
+  want review queues before social sends rather than a calendar.
 closed_alternative: Buffer AI, Hootsuite Assistant
 stats:
   stars: 2489

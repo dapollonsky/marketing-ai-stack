@@ -14,9 +14,9 @@ description: >-
   Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC, with
   media-saturation and adstock transforms baked in.
 why_it_matters: >-
-  The actively developed Bayesian-correct replacement for Meta's Robyn — Python-native, supported
-  by PyMC Labs, and the right substrate for defensible channel-contribution reporting. Pair with
-  an LLM for the narration layer.
+  Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC.
+  Python-native, actively developed by PyMC Labs. Media-saturation and adstock transforms baked
+  in.
 closed_alternative: Nielsen MMM, Analytic Partners
 stats:
   stars: 1100

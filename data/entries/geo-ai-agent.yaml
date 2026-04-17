@@ -14,9 +14,9 @@ description: >-
   Bright Data's CrewAI agent for Generative Engine Optimisation that audits how a brand appears
   across LLM answer engines.
 why_it_matters: >-
-  The most-deployed OSS pattern for querying multiple LLMs and diffing brand citations over time
-  — Bright Data backing gives it a real scraper substrate the hobby projects lack. Canonical by
-  default; field is unsettled and this entry is on review watch (last push Oct 2025).
+  Tracks how a brand shows up in ChatGPT, Perplexity, and Gemini answers over time. Bright Data
+  scraper under a CrewAI loop. Category is still unsettled, so expect this entry to move as
+  better tools ship.
 closed_alternative: Profound, AthenaHQ, Peec AI
 stats:
   stars: 153

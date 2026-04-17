@@ -14,9 +14,8 @@ description: >-
   Firecrawl's open AI web-monitoring platform where you spin up scouts that crawl the web on a
   schedule and email alerts when they find what you defined.
 why_it_matters: >-
-  The only OSS agent loop purpose-built for the "define a watch topic, get weekly briefs" job —
-  backed by Firecrawl's scraping, with a real inbox deliverable instead of another dashboard to
-  check.
+  Firecrawl-backed agent loop that watches topics on a schedule and emails weekly briefs. A real
+  inbox deliverable, not another dashboard to check.
 closed_alternative: Crayon, Kompyte, Google Alerts
 stats:
   stars: 1271

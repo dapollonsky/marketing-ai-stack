@@ -3,8 +3,11 @@
   ┃┃┃┣━┫┣┳┛┣┻┓┣╸  ┃ ┃┃┗┫┃╺┓╺━╸┣━┫┃╺━╸┗━┓ ┃ ┣━┫┃  ┣┻┓
   ╹ ╹╹ ╹╹┗╸┗━┛┗━┛ ╹ ╹╹ ╹┗━┛   ╹ ╹╹   ┗━┛ ╹ ╹ ╹┗━╸╹ ╹
 ```
-One canonical OSS pick per marketing job. Editorial, not comprehensive. Rejections public.
-## What to install
+> One canonical open-source pick per marketing job.
+This list curates 18 open-source tools, MCP servers, and Claude skills that do marketing work end-to-end. Entries are grouped by the 8 workflows a marketer actually runs: research, positioning, content, SEO, social, paid, lifecycle, and measurement. Each workflow contains atomic jobs like keyword research, ad copy variants, or inbox triage. Each job gets 1 canonical pick. 14 more jobs sit as open slots because no OSS version exists yet.
+**How we pick.** Every candidate runs through 3 filters: it fits a daily marketing workflow, it automates the work instead of assisting it, and a non-engineering marketer can install it in under a week. When 2 tools serve meaningfully different personas for the same job, one is canonical and the other lands as an alternate. Everything else goes in [rejected/](rejected/) with the reasoning and a "reconsider if" clause. Picks are re-reviewed quarterly.
+**How to contribute.** Open a PR against a YAML file in [data/entries/](data/entries/). The README is auto-generated from those files. Full rules in [CONTRIBUTING.md](CONTRIBUTING.md).
+## The shortlist
 | Job | Install | Cancels |
 |---|---|---|
 | Competitor monitoring | [Open Scouts](https://github.com/firecrawl/open-scouts) | Crayon |
@@ -25,312 +28,316 @@ One canonical OSS pick per marketing job. Editorial, not comprehensive. Rejectio
 | Inbox triage | [Inbox Zero](https://github.com/elie222/inbox-zero) | Superhuman |
 | Analytics narration | [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) | GA4 Explorations UI |
 | Performance reports (MMM) | [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing) | Nielsen MMM |
-**Open slots** (no OSS canonical yet): ICP discovery · ICP / persona docs · Refresh / decay audits · Repurposing · Case studies · Internal linking · Creator outreach · Community reply · Landing pages from brief · Welcome / nurture sequences · List segmentation · Newsletter production · Deliverability watchdog · Attribution narration.
+## Open slots
 
-See [rejected/](rejected/) for what we evaluated and didn't list.
+14 marketing jobs still run on closed tools. Clay covers ICP discovery. Dreamdata covers attribution narration. Profound covers GEO tracking. Surfer covers decay audits. Modash covers creator outreach. An OSS version of any of these lands on the list the day it ships.
+
+ICP discovery · ICP / persona docs · Refresh / decay audits · Repurposing · Case studies · Internal linking · Creator outreach · Community reply · Landing pages from brief · Welcome / nurture sequences · List segmentation · Newsletter production · Deliverability watchdog · Attribution narration.
+
+See [rejected/](rejected/) for everything evaluated and the reasoning for why it didn't land.
 ---
-## Detail
+## Why each pick won
 <details>
-<summary>🔭 <strong>Research & intelligence</strong> — full detail & alternates</summary>
+<summary>🔭 <strong>Research & intelligence</strong> (canonicals + alternates)</summary>
 
 ### Competitor monitoring
 
-**Pick →** [Open Scouts](https://github.com/firecrawl/open-scouts) — The only OSS agent loop purpose-built for the "define a watch topic, get weekly briefs" job — backed by Firecrawl's scraping, with a real inbox deliverable instead of another dashboard to check. <sub>🟢 Automate</sub>
+**Canonical:** [Open Scouts](https://github.com/firecrawl/open-scouts). Firecrawl-backed agent loop that watches topics on a schedule and emails weekly briefs. A real inbox deliverable, not another dashboard to check. <sub>🟢 Automate</sub>
 
-**Also consider:**
-- [changedetection.io](https://github.com/dgtlmoon/changedetection.io) — When a marketer needs reliable, cheap, deterministic monitoring of competitor pricing pages, job boards, or changelogs — and will pipe the diffs through an LLM themselves — this is the pick where Open Scouts' prompt-loop would be overkill. <sub>🟢 Automate</sub>
-- [FireGEO](https://github.com/firecrawl/firegeo) — Different surface than web monitoring — tracks share-of-voice inside LLM answer engines, which matters as buyer research shifts from Google to AI chats. Worth forking when GEO visibility is the KPI. <sub>🟡 Augment</sub>
+**Also considered:**
+- [changedetection.io](https://github.com/dgtlmoon/changedetection.io). Deterministic page diffs via XPath and CSS selectors, with webhooks on every change. Best for cheap, reliable monitoring piped into a custom downstream agent. <sub>🟢 Automate</sub>
+- [FireGEO](https://github.com/firecrawl/firegeo). Firecrawl starter for tracking brand and competitor citations inside ChatGPT, Claude, and Perplexity answers. Best when GEO visibility is the KPI, not web pages. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/competitor-monitoring.md)</sub>
 
 ### Customer-voice extraction
 
-**Pick →** [noScribe](https://github.com/kaixxx/noScribe) — The only OSS tool that nails interview transcription end-to-end — speaker diarization, a usable review editor, and no cloud hop for sensitive customer calls. Everything downstream (themes, quotes, pain points) is then a single LLM pass. <sub>🟢 Automate</sub>
+**Canonical:** [noScribe](https://github.com/kaixxx/noScribe). Local-first interview transcription with speaker diarization and a usable review editor. No cloud hop for sensitive customer calls. Everything downstream (themes, quotes, pain points) is a single LLM pass. <sub>🟢 Automate</sub>
 
-**Also consider:**
-- [Reddit Research MCP](https://github.com/king-of-the-grackles/reddit-research-mcp) — Where noScribe handles your own calls, this surfaces raw buyer language in the wild — pain points, objections, and phrasing your prospects actually use. Complementary primitive for voice-of-customer work. <sub>🟢 Automate · 🔌 MCP</sub>
+**Also considered:**
+- [Reddit Research MCP](https://github.com/king-of-the-grackles/reddit-research-mcp). MCP with semantic search across 20,000 subreddits and citations. Best for surfacing buyer language, objections, and phrasing from outside your own customer base. <sub>🟢 Automate · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/customer-voice-extraction.md)</sub>
 
 ### ICP discovery
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/icp-discovery.md)</sub>
 
 ### Market scans
 
-**Pick →** [GPT Researcher](https://github.com/assafelovic/gpt-researcher) — The most-adopted OSS deep-research agent — a marketer describes the market area, gets a structured brief with sources, and skips the afternoon of tab-juggling. Sets the bar others are measured against. <sub>🟢 Automate</sub>
+**Canonical:** [GPT Researcher](https://github.com/assafelovic/gpt-researcher). Autonomous research agent that does tree-like topic exploration and returns a citation-backed brief. 26k stars, actively maintained. Describe the market area, get a structured report back. <sub>🟢 Automate</sub>
 
-**Also consider:**
-- [LangChain Open Deep Research](https://github.com/langchain-ai/open_deep_research) — Where GPT Researcher is opinionated and turnkey, this is the pick for a marketing engineer who wants to customize the writer/planner stack or bolt in proprietary MCPs — different persona, different tradeoff. <sub>🟡 Augment · 🔌 MCP</sub>
+**Also considered:**
+- [LangChain Open Deep Research](https://github.com/langchain-ai/open_deep_research). Multi-agent research scaffold with MCP-native tool use and configurable report structures. For marketing engineers who want to tune the writer and planner stack. <sub>🟡 Augment · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/market-scans.md)</sub>
 
 </details>
 
 <details>
-<summary>🧭 <strong>Positioning & strategy</strong> — full detail & alternates</summary>
+<summary>🧭 <strong>Positioning & strategy</strong> (canonicals + alternates)</summary>
 
 ### Campaign briefs
 
-**Pick →** [Anthropic Marketing Plugin](https://github.com/anthropics/knowledge-work-plugins) — First-party, Anthropic-maintained, and the new default as of the Cowork launch — spans campaign-brief, launch-messaging, and battlecard atoms with a single install. The substrate other strategy skill packs now compete against. <sub>🟢 Automate · 🔌 MCP</sub>
+**Canonical:** [Anthropic Marketing Plugin](https://github.com/anthropics/knowledge-work-plugins). First-party plugin from Anthropic covering campaign briefs, launch messaging, and battlecards in 1 install. Ships with MCP wiring to Notion, HubSpot, Ahrefs, and Supermetrics. <sub>🟢 Automate · 🔌 MCP</sub>
 
-**Also consider:**
-- [Corey Haines Marketing Skills](https://github.com/coreyhaines31/marketingskills) — Different persona from Anthropic's neutral plugin — opinionated SaaS-startup POV from a practitioner marketer. The pick when you want "this is what a startup CMO actually ships," not the textbook framework. <sub>🟢 Automate</sub>
+**Also considered:**
+- [Corey Haines Marketing Skills](https://github.com/coreyhaines31/marketingskills). 36 Claude skills from a working SaaS marketer, structured around a shared product-marketing-context spine. Best for startup-flavored strategy rather than generic frameworks. <sub>🟢 Automate</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/campaign-brief.md)</sub>
 
 ### Launch messaging
 
-**Pick →** Covered by *anthropic-marketing-plugin* — see [Campaign briefs](#campaign-brief).
+**Canonical:** Covered by the *Anthropic Marketing Plugin* entry under Campaign briefs.
 
 <sub>🗑️ [Rejected candidates](rejected/launch-messaging.md)</sub>
 
 ### Battlecards
 
-**Pick →** Covered by *anthropic-marketing-plugin* — see [Campaign briefs](#campaign-brief).
+**Canonical:** Covered by the *Anthropic Marketing Plugin* entry under Campaign briefs.
 
 <sub>🗑️ [Rejected candidates](rejected/battlecard.md)</sub>
 
 ### ICP / persona docs
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/icp-persona-docs.md)</sub>
 
 </details>
 
 <details>
-<summary>✍️ <strong>Content production</strong> — full detail & alternates</summary>
+<summary>✍️ <strong>Content production</strong> (canonicals + alternates)</summary>
 
 ### Long-form drafts
 
-**Pick →** [ALwrity](https://github.com/AJaySi/ALwrity) — The most credible OSS Jasper/Copy.ai alternative a marketer can self-host today — research → outline → content → SEO → publish in one workflow. Nothing else in OSS ships this much of the long-form-drafting job end-to-end. <sub>🟡 Augment</sub>
+**Canonical:** [ALwrity](https://github.com/AJaySi/ALwrity). Self-hosted blog drafting that ships the full pipeline: research, outline, SEO scoring, publish. 1 Streamlit app, 20-minute install. <sub>🟡 Augment</sub>
 
-**Also consider:**
-- [Microsoft Content Generation Accelerator](https://github.com/microsoft/content-generation-solution-accelerator) — Different persona than ALwrity — enterprise Azure-based brief-to-asset pipeline with brand-compliance validation. The pick for procurement-heavy orgs that need a Microsoft pattern to ship inside. <sub>🟡 Augment</sub>
+**Also considered:**
+- [Microsoft Content Generation Accelerator](https://github.com/microsoft/content-generation-solution-accelerator). Enterprise Azure AI Foundry pipeline with brief-to-asset agents and brand-compliance validation. For procurement-heavy orgs that need a Microsoft reference pattern. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/long-form-drafting.md)</sub>
 
 ### Refresh / decay audits
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/refresh-decay-audit.md)</sub>
 
 ### Repurposing
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/repurposing.md)</sub>
 
 ### Case studies
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/case-study.md)</sub>
 
 </details>
 
 <details>
-<summary>🔍 <strong>Organic discovery</strong> — full detail & alternates</summary>
+<summary>🔍 <strong>Organic discovery</strong> (canonicals + alternates)</summary>
 
 ### Keyword research
 
-**Pick →** [DataForSEO MCP](https://github.com/dataforseo/mcp-server-typescript) — The only agent-ready data layer that actually returns commercial-grade volume/CPC/difficulty on par with Ahrefs or Semrush — one install gets a marketer the same data set the paid tools sell, usable from any MCP client. <sub>🟢 Automate · 🔌 MCP</sub>
+**Canonical:** [DataForSEO MCP](https://github.com/dataforseo/mcp-server-typescript). Commercial-grade SEO data via MCP. Volume, CPC, difficulty, all agent-ready. The data foundation Ahrefs and Semrush sell, reachable from any MCP client. <sub>🟢 Automate · 🔌 MCP</sub>
 
-**Also consider:**
-- [mcp-gsc](https://github.com/AminForou/mcp-gsc) — Different tradeoff from DataForSEO — first-party GSC data for "what am I actually ranking for" rather than third-party volume for discovery. The pick when the job is diagnosing your own traffic rather than prospecting new keywords. <sub>🟢 Automate · 🔌 MCP</sub>
+**Also considered:**
+- [mcp-gsc](https://github.com/AminForou/mcp-gsc). MCP for Google Search Console with query performance, URL inspection, and sitemap status. Best for diagnosing your own ranking traffic rather than prospecting new keywords. <sub>🟢 Automate · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/keyword-research.md)</sub>
 
 ### On-page SEO audit
 
-**Pick →** [SEO & GEO Claude Skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills) — The only OSS pack that ships an opinionated on-page audit runnable against a URL from Claude Code — skills-native, not a port of a 2018 CLI. Narrow scope is a feature; it competes only within SEO and wins the atom. <sub>🟢 Automate</sub>
+**Canonical:** [SEO & GEO Claude Skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills). Focused Claude skill pack with 20 SEO and GEO skills. On-page auditor runs against a URL from Claude Code with an EEAT and CITE scoring rubric. Narrow scope by design. <sub>🟢 Automate</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/on-page-seo-audit.md)</sub>
 
 ### Technical SEO crawl
 
-**Pick →** [LibreCrawl](https://github.com/PhialsBasement/LibreCrawl) — The clearest Screaming Frog replacement on the market — MIT-licensed, unlimited URLs, and enough feature density to run a real technical audit without a per-seat license. <sub>🟢 Automate</sub>
+**Canonical:** [LibreCrawl](https://github.com/PhialsBasement/LibreCrawl). Screaming Frog replacement. MIT-licensed, unlimited URLs, full technical coverage for redirects, canonicals, schema, and Core Web Vitals. Runs as desktop or web app. <sub>🟢 Automate</sub>
 
-**Also consider:**
-- [crawl4ai](https://github.com/unclecode/crawl4ai) — Different persona from LibreCrawl — not an SEO tool per se, but the substrate most LLM-native SEO agents compose on top of for custom technical crawls. The pick for marketing engineers building bespoke audit flows. <sub>🟡 Augment · 🔌 MCP</sub>
-- [RustySEO](https://github.com/mascanho/RustySEO) — Different tradeoff from LibreCrawl — Rust-native, ships a log-file parser (Nginx/Apache) that LibreCrawl lacks. The pick when the job is log-based SEO forensics. <sub>🟡 Augment</sub>
+**Also considered:**
+- [crawl4ai](https://github.com/unclecode/crawl4ai). LLM-friendly web crawler optimized for clean markdown and structured output. For marketing engineers composing custom SEO agents on top of a crawl layer. <sub>🟡 Augment · 🔌 MCP</sub>
+- [RustySEO](https://github.com/mascanho/RustySEO). Rust and Tauri desktop SEO toolkit with a Nginx/Apache log-file parser LibreCrawl lacks. For log-based SEO forensics. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/technical-seo-crawl.md)</sub>
 
 ### GEO / AEO citation tracking
 
-**Pick →** [GEO AI Agent](https://github.com/brightdata/geo-ai-agent) — The most-deployed OSS pattern for querying multiple LLMs and diffing brand citations over time — Bright Data backing gives it a real scraper substrate the hobby projects lack. Canonical by default; field is unsettled and this entry is on review watch (last push Oct 2025). <sub>🟡 Augment</sub>
+**Canonical:** [GEO AI Agent](https://github.com/brightdata/geo-ai-agent). Tracks how a brand shows up in ChatGPT, Perplexity, and Gemini answers over time. Bright Data scraper under a CrewAI loop. Category is still unsettled, so expect this entry to move as better tools ship. <sub>🟡 Augment</sub>
 
-**Also consider:**
-- [getcito](https://github.com/ai-search-guru/getcito-worlds-first-open-source-aio-aeo-or-geo-tool) — Different persona from GEO AI Agent — a deployable web app with dashboards rather than a CrewAI script. The pick for teams that want a tool, not a Claude thread. <sub>🟡 Augment</sub>
+**Also considered:**
+- [getcito](https://github.com/ai-search-guru/getcito-worlds-first-open-source-aio-aeo-or-geo-tool). Self-hostable web app for GEO tracking with run-over-run dashboards. For teams that want a deployable tool rather than a Claude thread. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/geo-aeo-citation-tracking.md)</sub>
 
 ### Internal linking
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/internal-linking.md)</sub>
 
 </details>
 
 <details>
-<summary>📱 <strong>Social & video</strong> — full detail & alternates</summary>
+<summary>📱 <strong>Social & video</strong> (canonicals + alternates)</summary>
 
 ### Multi-channel scheduling
 
-**Pick →** [Postiz](https://github.com/gitroomhq/postiz-app) — The clearest "replace Buffer" OSS story — 9× Mixpost's stars, covers every channel a modern founder posts to, and keeps the content history and analytics on the team's own infrastructure. Settled atom. <sub>🟢 Automate</sub>
+**Canonical:** [Postiz](https://github.com/gitroomhq/postiz-app). Self-hosted social scheduler across X, LinkedIn, Instagram, TikTok, YouTube, Threads, and Bluesky. Content history and analytics stay on the team's own infrastructure. Settled atom. <sub>🟢 Automate</sub>
 
-**Also consider:**
-- [LangChain Social Media Agent](https://github.com/langchain-ai/social-media-agent) — Different persona from Postiz — not a scheduler, a sourcing + drafting agent with approval queues. The pick when the job is "generate + curate" rather than "plan a calendar," and the team wants review before sends. <sub>🟢 Automate</sub>
-- [Mixpost](https://github.com/inovector/mixpost) — Different license tradeoff from Postiz — MIT (vs. Postiz's AGPL-3.0). The pick when commercial resale or closed-source embedding matters and the AGPL virality would block you. <sub>🟢 Automate</sub>
+**Also considered:**
+- [LangChain Social Media Agent](https://github.com/langchain-ai/social-media-agent). LangGraph sourcing and drafting agent with Slack human-in-the-loop approval. For teams that want review queues before social sends rather than a calendar. <sub>🟢 Automate</sub>
+- [Mixpost](https://github.com/inovector/mixpost). MIT-licensed social scheduler covering the same channels as Postiz. Best for commercial resale or closed-source embedding where AGPL would block you. <sub>🟢 Automate</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/multi-channel-scheduling.md)</sub>
 
 ### Long video → shorts
 
-**Pick →** [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) — By far the most popular OSS pipeline for shipping TikToks and Shorts — rough edges, but lets a solo marketer go from topic to posted video without touching a timeline editor. Category leader by a 100× margin on stars. <sub>🟢 Automate</sub>
+**Canonical:** [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo). One-click AI short-video pipeline. Script, TTS, stock footage, subtitles, output. 55k stars, the category leader by a 100x margin. <sub>🟢 Automate</sub>
 
-**Also consider:**
-- [OpenShorts](https://github.com/mutonby/openshorts) — Different tradeoff from MoneyPrinter — clip from real long-form video (podcasts, YouTube) rather than synthesize from a keyword. The pick for repurposing existing content, not spinning up new. <sub>🟢 Automate</sub>
-- [Viral Clips Crew](https://github.com/alexfazio/viral-clips-crew) — The cleanest reference architecture for a video-repurposing agent — different deployment model from MoneyPrinter (template, not product). Author notes it's "vibe-coded," so fork it, don't expect upstream progress. <sub>🟡 Augment</sub>
+**Also considered:**
+- [OpenShorts](https://github.com/mutonby/openshorts). Clips existing long-form video into shorts with YouTube Studio integration and no watermarks. For podcast and YouTube repurposing rather than topic-from-scratch generation. <sub>🟢 Automate</sub>
+- [Viral Clips Crew](https://github.com/alexfazio/viral-clips-crew). CrewAI template for transcription, highlight selection, and cutting agents. A reference pattern for custom video pipelines, not a shipped product. Author describes it as "vibe-coded," so expect to maintain any fork yourself. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/long-to-shorts.md)</sub>
 
 ### Creator outreach
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/creator-outreach.md)</sub>
 
 ### Community reply
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/community-reply.md)</sub>
 
 </details>
 
 <details>
-<summary>💰 <strong>Paid acquisition</strong> — full detail & alternates</summary>
+<summary>💰 <strong>Paid acquisition</strong> (canonicals + alternates)</summary>
 
 ### Ad copy variants
 
-**Pick →** [claude-ads](https://github.com/AgriciDaniel/claude-ads) — The only OSS asset with meaningful mindshare built specifically for ad copy — opinionated prompts, not a framework. Narrow scope plus early traction (2.6k stars in weeks) makes it the pick for "generate + score ad variants at scale." <sub>🟢 Automate</sub>
+**Canonical:** [claude-ads](https://github.com/AgriciDaniel/claude-ads). Claude skill pack for ad copy audit and variant generation. Covers Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, and Apple with weighted scoring. 2.6k stars, narrow scope. <sub>🟢 Automate</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/ad-copy-variants.md)</sub>
 
 ### Ad creative variants
 
-**Pick →** [ComfyUI](https://github.com/Comfy-Org/ComfyUI) — The only OSS substrate professional creative teams (OpenAI, Netflix, EA, Amazon Studios) actually use for batch ad-variant generation at scale — everything else is a hosted SaaS wrapper around it. Settled atom. <sub>🟡 Augment</sub>
+**Canonical:** [ComfyUI](https://github.com/Comfy-Org/ComfyUI). Node-based visual workflow app for generative image and video. Used by professional creative teams at OpenAI, Netflix, EA, and Amazon Studios for batch ad-variant generation. Settled atom. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/ad-creative-variants.md)</sub>
 
 ### Budget rebalancing
 
-**Pick →** [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp) — The only OSS Meta Ads MCP with a verified Meta Business Partner badge, giving agents a clean API-compliance path to pause and rebalance without API bans. Credentials tier matters more than feature breadth here. <sub>🟡 Augment · 🔌 MCP</sub>
+**Canonical:** [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp). Meta Business Partner-approved MCP for Facebook and Instagram ads. Clean API path and compliant credentials matter once an agent actually moves budget. <sub>🟡 Augment · 🔌 MCP</sub>
 
-**Also consider:**
-- [Ads MCP (multi-platform)](https://github.com/amekala/ads-mcp) — Different deployment model — multi-platform, one endpoint. Tradeoff is lower per-platform fidelity and no partner tier. The pick when an agent needs unified access and you can live with less polish per channel. <sub>🟡 Augment · 🔌 MCP</sub>
-- [Google Ads MCP](https://github.com/googleads/google-ads-mcp) — Different channel than Meta Ads MCP — Google-official, Apache-2.0. Pair with Meta Ads MCP to cover the two dominant paid channels. Biggest time-saver for performance teams running Search and Performance Max. <sub>🟡 Augment · 🔌 MCP</sub>
+**Also considered:**
+- [Ads MCP (multi-platform)](https://github.com/amekala/ads-mcp). Single MCP covering Google, Meta, LinkedIn, and TikTok Ads through one endpoint. Tradeoff is lower per-platform fidelity. For agents that need unified multi-channel access. <sub>🟡 Augment · 🔌 MCP</sub>
+- [Google Ads MCP](https://github.com/googleads/google-ads-mcp). Google's first-party Apache-2.0 MCP covering campaigns, budgets, keywords, ad groups, and performance queries. Covers Search and Performance Max alongside Meta Ads MCP. <sub>🟡 Augment · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/budget-rebalancing.md)</sub>
 
 ### Landing pages from brief
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/landing-page-from-brief.md)</sub>
 
 ### A/B test analysis
 
-**Pick →** [GrowthBook](https://github.com/growthbook/growthbook) — Settled winner for LP and funnel A/B testing — proper stats, ships its own MCP for agents to summarize experiments and declare winners, and no OSS competitor is remotely close. Pair with any copy-variant skill. <sub>🟢 Automate · 🔌 MCP</sub>
+**Canonical:** [GrowthBook](https://github.com/growthbook/growthbook). Bayesian and frequentist experimentation platform with CUPED, sequential testing, SRM checks, and an official MCP. Handles LP and funnel tests end-to-end. Settled atom. <sub>🟢 Automate · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/ab-test-analysis.md)</sub>
 
 </details>
 
 <details>
-<summary>📬 <strong>Lifecycle & email</strong> — full detail & alternates</summary>
+<summary>📬 <strong>Lifecycle & email</strong> (canonicals + alternates)</summary>
 
 ### Welcome / nurture sequences
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/welcome-nurture-sequence.md)</sub>
 
 ### List segmentation
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/list-segmentation.md)</sub>
 
 ### Newsletter production
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/newsletter-production.md)</sub>
 
 ### Inbox triage
 
-**Pick →** [Inbox Zero](https://github.com/elie222/inbox-zero) — Mature, self-hostable, and 10k+ stars with real momentum — the only OSS inbox-triage app with rules, auto-draft, unsubscribe, and bulk processing wired together. Gives a founder-marketer a working triage layer over partnership pitches and press inquiries. <sub>🟡 Augment</sub>
+**Canonical:** [Inbox Zero](https://github.com/elie222/inbox-zero). Self-hosted AI email assistant with rules, auto-drafting, bulk unsubscribe, and a clean review UI. Clears partnership pitches, press inquiries, and user replies before the inbox becomes a bottleneck. <sub>🟡 Augment</sub>
 
-**Also consider:**
-- [mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail) — Different persona from Inbox Zero — the pick when the job is letting multiple agents coordinate over mail-like threads, not triaging a human inbox. Emerging pattern for Claude Code-heavy marketing teams. <sub>🟢 Automate · 🔌 MCP</sub>
+**Also considered:**
+- [mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail). Agent-to-agent mail layer exposed as an MCP server. For teams letting multiple agents coordinate over mail-like threads rather than triaging a human inbox. <sub>🟢 Automate · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/inbox-triage.md)</sub>
 
 ### Deliverability watchdog
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/deliverability-watchdog.md)</sub>
 
 </details>
 
 <details>
-<summary>📊 <strong>Measurement</strong> — full detail & alternates</summary>
+<summary>📊 <strong>Measurement</strong> (canonicals + alternates)</summary>
 
 ### Analytics narration
 
-**Pick →** [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) — Official, Apache-2.0, and GA4 is the data source most marketers actually have. Paired with a weekly-summary skill it produces plain-English funnel stories — replaces an afternoon of building Explorations in the GA4 UI. <sub>🟢 Automate · 🔌 MCP</sub>
+**Canonical:** [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp). Google's official GA4 MCP server. Exposes reports, dimensions, and metrics over the Data API. Pairs with a weekly-summary skill for plain-English funnel stories. <sub>🟢 Automate · 🔌 MCP</sub>
 
-**Also consider:**
-- [PostHog MCP](https://github.com/PostHog/posthog) — Different persona from GA4 MCP — product analytics with behavioral cohorts GA4 can't see. The pick for product-led teams. (Server lives in the PostHog monorepo; the standalone PostHog/mcp repo was archived and folded in.) <sub>🟢 Automate · 🔌 MCP</sub>
+**Also considered:**
+- [PostHog MCP](https://github.com/PostHog/posthog). Official PostHog hosted MCP for events, funnels, cohorts, insights, and feature flags. For product-led teams where behavioral cohorts matter more than web analytics. <sub>🟢 Automate · 🔌 MCP</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/analytics-narration.md)</sub>
 
 ### Attribution narration
 
-**Pick →** _Open slot. No OSS canonical yet._
+_No canonical yet._
 
 <sub>🗑️ [Rejected candidates](rejected/attribution-narration.md)</sub>
 
 ### Landing-page test analysis
 
-**Pick →** Covered by *growthbook* — see [A/B test analysis](#ab-test-analysis).
+**Canonical:** Covered by the *GrowthBook* entry under A/B test analysis.
 
 <sub>🗑️ [Rejected candidates](rejected/landing-page-test-analysis.md)</sub>
 
 ### Performance reports (MMM)
 
-**Pick →** [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing) — The actively developed Bayesian-correct replacement for Meta's Robyn — Python-native, supported by PyMC Labs, and the right substrate for defensible channel-contribution reporting. Pair with an LLM for the narration layer. <sub>🟡 Augment</sub>
+**Canonical:** [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing). Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC. Python-native, actively developed by PyMC Labs. Media-saturation and adstock transforms baked in. <sub>🟡 Augment</sub>
 
-**Also consider:**
-- [Robyn](https://github.com/facebookexperimental/Robyn) — Different stack from PyMC-Marketing — R-based, Meta-backed, with a large existing practitioner community. Pick it when the team already runs R or needs Meta's specific parameterizations, but watch for staleness (last commit early 2026). <sub>🟡 Augment</sub>
+**Also considered:**
+- [Robyn](https://github.com/facebookexperimental/Robyn). R-based Marketing Mix Modeling library from Meta with ridge regression, Nevergrad optimization, and a large practitioner community. For analytics teams already working in R. <sub>🟡 Augment</sub>
 
 <sub>🗑️ [Rejected candidates](rejected/performance-report.md)</sub>
 
 </details>
 
 <details>
-<summary>🧱 <strong>Substrate</strong> — MCP bridges, platforms, orchestrators</summary>
+<summary>🧱 <strong>Substrate</strong> (MCP bridges, platforms, orchestrators)</summary>
 
-_Not marketing jobs. The plumbing underneath: connectors to tools marketers already use, self-hosted platforms, and orchestration layers._
+_The plumbing. Not marketing work in itself, but every pick above runs on this layer._
 
 **MCP bridges**
 
@@ -366,7 +373,7 @@ _Not marketing jobs. The plumbing underneath: connectors to tools marketers alre
 <details>
 <summary>⚠️ <strong>Watchlist</strong> (3)</summary>
 
-_Flagged but not fully endorsed — stale, ToS risk, or very early._
+_On watch. Too stale, too young, or ToS-risky to canonize today._
 
 - **[AI-ContentCraft](https://github.com/nicekate/AI-ContentCraft)** — A useful template for founders and marketing teams building content pipelines that span text and audio — one codebase to crib from instead of stitching Jasper and ElevenLabs together.
 - **[aiwriter](https://github.com/kristianfreeman/aiwriter)** — A lightweight way for marketers and founders to produce SEO-aware long-form drafts without running their own GPU infrastructure — deploy it to a free Cloudflare account and start shipping posts the same day.
@@ -375,4 +382,5 @@ _Flagged but not fully endorsed — stale, ToS risk, or very early._
 </details>
 
 ---
+Last reviewed: 2026-04-17
 [Scope](SCOPE.md) · [Contributing](CONTRIBUTING.md) · [gtm-ai-stack](https://github.com/dapollonsky/gtm-ai-stack) · [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)

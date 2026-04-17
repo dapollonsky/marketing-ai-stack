@@ -14,9 +14,8 @@ description: >-
   Official PostHog MCP server (hosted at mcp.posthog.com) exposing events, funnels, cohorts,
   insights, and feature flags to MCP-compatible agents.
 why_it_matters: >-
-  Different persona from GA4 MCP — product analytics with behavioral cohorts GA4 can't see. The
-  pick for product-led teams. (Server lives in the PostHog monorepo; the standalone PostHog/mcp
-  repo was archived and folded in.)
+  Official PostHog hosted MCP for events, funnels, cohorts, insights, and feature flags. For
+  product-led teams where behavioral cohorts matter more than web analytics.
 closed_alternative: PostHog UI
 stats:
   stars: null

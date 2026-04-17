@@ -14,8 +14,8 @@ description: >-
   Self-hosted social media management app covering scheduling, calendars, and analytics across
   major channels.
 why_it_matters: >-
-  Different license tradeoff from Postiz — MIT (vs. Postiz's AGPL-3.0). The pick when commercial
-  resale or closed-source embedding matters and the AGPL virality would block you.
+  MIT-licensed social scheduler covering the same channels as Postiz. Best for commercial
+  resale or closed-source embedding where AGPL would block you.
 closed_alternative: Buffer, Hootsuite
 stats:
   stars: 3108

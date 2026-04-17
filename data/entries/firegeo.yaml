@@ -14,9 +14,8 @@ description: >-
   Firecrawl's open starter for monitoring how a brand and competitors appear inside ChatGPT,
   Claude, and Perplexity answers over time.
 why_it_matters: >-
-  Different surface than web monitoring — tracks share-of-voice inside LLM answer engines, which
-  matters as buyer research shifts from Google to AI chats. Worth forking when GEO visibility is
-  the KPI.
+  Firecrawl starter for tracking brand and competitor citations inside ChatGPT, Claude, and
+  Perplexity answers. Best when GEO visibility is the KPI, not web pages.
 closed_alternative: Profound, AthenaHQ
 stats:
   stars: 621

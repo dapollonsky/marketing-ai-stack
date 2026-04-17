@@ -70,9 +70,9 @@ const ATOM_TITLES = {
 // Atoms whose canonical is the same entry as another atom's canonical — the row
 // in the main shortlist gets a combined label and we skip the secondary atoms.
 const CROSS_REFS = {
-  'launch-messaging': { slug: 'anthropic-marketing-plugin', from: 'campaign-brief' },
-  battlecard: { slug: 'anthropic-marketing-plugin', from: 'campaign-brief' },
-  'landing-page-test-analysis': { slug: 'growthbook', from: 'ab-test-analysis' },
+  'launch-messaging': { slug: 'anthropic-marketing-plugin', name: 'Anthropic Marketing Plugin', from: 'campaign-brief' },
+  battlecard: { slug: 'anthropic-marketing-plugin', name: 'Anthropic Marketing Plugin', from: 'campaign-brief' },
+  'landing-page-test-analysis': { slug: 'growthbook', name: 'GrowthBook', from: 'ab-test-analysis' },
 };
 
 // When a canonical covers multiple atoms, override its main-table Job label.
@@ -196,23 +196,23 @@ async function renderWorkflowDetail(wf, byAtom) {
       const href = c.repo || c.url;
       const why = c.why_it_matters.replace(/\s+/g, ' ').trim();
       const sig = depthAndMcp(c);
-      lines.push(`**Pick →** [${c.name}](${href}) — ${why}${sig ? ` <sub>${sig}</sub>` : ''}`);
+      lines.push(`**Canonical:** [${c.name}](${href}). ${why}${sig ? ` <sub>${sig}</sub>` : ''}`);
       lines.push('');
     } else if (xref) {
-      lines.push(`**Pick →** Covered by *${xref.slug}* — see [${ATOM_TITLES[xref.from]}](#${xref.from}).`);
+      lines.push(`**Canonical:** Covered by the *${xref.name || xref.slug}* entry under ${ATOM_TITLES[xref.from]}.`);
       lines.push('');
     } else {
-      lines.push(`**Pick →** _Open slot. No OSS canonical yet._`);
+      lines.push(`_No canonical yet._`);
       lines.push('');
     }
 
     if (alternates.length > 0) {
-      lines.push(`**Also consider:**`);
+      lines.push(`**Also considered:**`);
       for (const a of alternates) {
         const href = a.repo || a.url;
         const why = a.why_it_matters.replace(/\s+/g, ' ').trim();
         const sig = depthAndMcp(a);
-        lines.push(`- [${a.name}](${href}) — ${why}${sig ? ` <sub>${sig}</sub>` : ''}`);
+        lines.push(`- [${a.name}](${href}). ${why}${sig ? ` <sub>${sig}</sub>` : ''}`);
       }
       lines.push('');
     }
@@ -232,7 +232,7 @@ async function renderAllDetails(byAtom) {
     sections.push(
       [
         `<details>`,
-        `<summary>${wf.emoji} <strong>${wf.title}</strong> — full detail & alternates</summary>`,
+        `<summary>${wf.emoji} <strong>${wf.title}</strong> (canonicals + alternates)</summary>`,
         '',
         body,
         `</details>`,
@@ -272,9 +272,9 @@ function renderSubstrateAppendix(substrate) {
 
   return [
     '<details>',
-    '<summary>🧱 <strong>Substrate</strong> — MCP bridges, platforms, orchestrators</summary>',
+    '<summary>🧱 <strong>Substrate</strong> (MCP bridges, platforms, orchestrators)</summary>',
     '',
-    '_Not marketing jobs. The plumbing underneath: connectors to tools marketers already use, self-hosted platforms, and orchestration layers._',
+    '_The plumbing. Not marketing work in itself, but every pick above runs on this layer._',
     '',
     section('MCP bridges', bridges),
     section('Self-hosted platforms', platforms),
@@ -322,6 +322,10 @@ async function main() {
 
   const openSlots = renderOpenSlots(byAtom);
   const detailSections = await renderAllDetails(byAtom);
+  const canonicalCount = Object.values(byAtom)
+    .flat()
+    .filter((e) => e.rank === 'canonical' && e.status === 'active').length;
+  const today = new Date().toISOString().slice(0, 10);
 
   const md = [
     '```',
@@ -330,19 +334,25 @@ async function main() {
     '  ╹ ╹╹ ╹╹┗╸┗━┛┗━┛ ╹ ╹╹ ╹┗━┛   ╹ ╹╹   ┗━┛ ╹ ╹ ╹┗━╸╹ ╹',
     '```',
     '',
-    'One canonical OSS pick per marketing job. Editorial, not comprehensive. Rejections public.',
+    '> One canonical open-source pick per marketing job.',
     '',
-    '## What to install',
+    `This list curates ${canonicalCount} open-source tools, MCP servers, and Claude skills that do marketing work end-to-end. Entries are grouped by the 8 workflows a marketer actually runs: research, positioning, content, SEO, social, paid, lifecycle, and measurement. Each workflow contains atomic jobs like keyword research, ad copy variants, or inbox triage. Each job gets 1 canonical pick. ${openSlots.length} more jobs sit as open slots because no OSS version exists yet.`,
+    '',
+    '**How we pick.** Every candidate runs through 3 filters: it fits a daily marketing workflow, it automates the work instead of assisting it, and a non-engineering marketer can install it in under a week. When 2 tools serve meaningfully different personas for the same job, one is canonical and the other lands as an alternate. Everything else goes in [rejected/](rejected/) with the reasoning and a "reconsider if" clause. Picks are re-reviewed quarterly.',
+    '',
+    '**How to contribute.** Open a PR against a YAML file in [data/entries/](data/entries/). The README is auto-generated from those files. Full rules in [CONTRIBUTING.md](CONTRIBUTING.md).',
+    '',
+    '## The shortlist',
     '',
     renderShortlist(byAtom),
     '',
     openSlots.length > 0
-      ? `**Open slots** (no OSS canonical yet): ${openSlots.join(' · ')}.\n\nSee [rejected/](rejected/) for what we evaluated and didn't list.`
+      ? `## Open slots\n\n${openSlots.length} marketing jobs still run on closed tools. Clay covers ICP discovery. Dreamdata covers attribution narration. Profound covers GEO tracking. Surfer covers decay audits. Modash covers creator outreach. An OSS version of any of these lands on the list the day it ships.\n\n${openSlots.join(' · ')}.\n\nSee [rejected/](rejected/) for everything evaluated and the reasoning for why it didn't land.`
       : '',
     '',
     '---',
     '',
-    '## Detail',
+    '## Why each pick won',
     '',
     detailSections,
     renderSubstrateAppendix(substrateEntries),
@@ -350,15 +360,17 @@ async function main() {
       'Watchlist',
       '⚠️',
       watchlist,
-      'Flagged but not fully endorsed — stale, ToS risk, or very early.'
+      'On watch. Too stale, too young, or ToS-risky to canonize today.'
     ),
     renderStatusAppendix(
       'Archive',
       '📦',
       archived,
-      'Archived upstream or absorbed into a parent project.'
+      'Archived upstream or folded into a larger project.'
     ),
     '---',
+    '',
+    `Last reviewed: ${today}`,
     '',
     '[Scope](SCOPE.md) · [Contributing](CONTRIBUTING.md) · [gtm-ai-stack](https://github.com/dapollonsky/gtm-ai-stack) · [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)',
     '',
@@ -368,9 +380,6 @@ async function main() {
 
   await fs.writeFile(README_PATH, md + '\n', 'utf8');
 
-  const canonicalCount = Object.values(byAtom)
-    .flat()
-    .filter((e) => e.rank === 'canonical' && e.status === 'active').length;
   console.log(
     `✓ README.md built — ${canonicalCount} canonicals, ${openSlots.length} open slots`
   );

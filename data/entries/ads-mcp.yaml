@@ -14,9 +14,8 @@ description: >-
   Single MCP server covering Google, Meta, LinkedIn, and TikTok Ads with 100+ tools for campaigns,
   creatives, and performance reporting.
 why_it_matters: >-
-  Different deployment model — multi-platform, one endpoint. Tradeoff is lower per-platform
-  fidelity and no partner tier. The pick when an agent needs unified access and you can live with
-  less polish per channel.
+  Single MCP covering Google, Meta, LinkedIn, and TikTok Ads through one endpoint. Tradeoff is
+  lower per-platform fidelity. For agents that need unified multi-channel access.
 closed_alternative: Madgicx, Northbeam
 stats:
   stars: 30

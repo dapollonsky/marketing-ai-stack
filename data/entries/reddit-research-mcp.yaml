@@ -14,9 +14,8 @@ description: >-
   MCP server that runs semantic search across 20,000+ subreddits, returning posts and comments
   ranked by relevance with citations.
 why_it_matters: >-
-  Where noScribe handles your own calls, this surfaces raw buyer language in the wild — pain
-  points, objections, and phrasing your prospects actually use. Complementary primitive for
-  voice-of-customer work.
+  MCP with semantic search across 20,000 subreddits and citations. Best for surfacing buyer
+  language, objections, and phrasing from outside your own customer base.
 closed_alternative: Reddit Pro, GummySearch
 stats:
   stars: 105

@@ -14,9 +14,8 @@ description: >-
   Node-based visual workflow app for generative image and video creation used by professional
   creative teams for batch asset generation.
 why_it_matters: >-
-  The only OSS substrate professional creative teams (OpenAI, Netflix, EA, Amazon Studios) actually
-  use for batch ad-variant generation at scale — everything else is a hosted SaaS wrapper around
-  it. Settled atom.
+  Node-based visual workflow app for generative image and video. Used by professional creative
+  teams at OpenAI, Netflix, EA, and Amazon Studios for batch ad-variant generation. Settled atom.
 closed_alternative: AdCreative.ai, Pencil, Midjourney + Runway
 stats:
   stars: 109073

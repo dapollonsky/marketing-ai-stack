@@ -14,9 +14,8 @@ description: >-
   Microsoft's multi-agent marketing content system built on Azure AI Foundry, with reference agents
   for briefing, drafting, and review.
 why_it_matters: >-
-  Different persona than ALwrity — enterprise Azure-based brief-to-asset pipeline with
-  brand-compliance validation. The pick for procurement-heavy orgs that need a Microsoft pattern
-  to ship inside.
+  Enterprise Azure AI Foundry pipeline with brief-to-asset agents and brand-compliance
+  validation. For procurement-heavy orgs that need a Microsoft reference pattern.
 closed_alternative: Jasper, Writer
 stats:
   stars: 217

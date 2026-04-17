@@ -14,9 +14,8 @@ description: >-
   Meta Marketing Science's experimental open-source Marketing Mix Modeling package built on ridge
   regression, Nevergrad optimization, and time-series decomposition.
 why_it_matters: >-
-  Different stack from PyMC-Marketing — R-based, Meta-backed, with a large existing practitioner
-  community. Pick it when the team already runs R or needs Meta's specific parameterizations, but
-  watch for staleness (last commit early 2026).
+  R-based Marketing Mix Modeling library from Meta with ridge regression, Nevergrad
+  optimization, and a large practitioner community. For analytics teams already working in R.
 closed_alternative: Nielsen MMM, Analytic Partners
 stats:
   stars: 1445

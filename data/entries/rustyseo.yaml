@@ -12,8 +12,8 @@ tags:
   automation_depth: augment
 description: Rust and Tauri desktop SEO and GEO toolkit with log parsing, a crawler, and LLM-driven audits.
 why_it_matters: >-
-  Different tradeoff from LibreCrawl — Rust-native, ships a log-file parser (Nginx/Apache) that
-  LibreCrawl lacks. The pick when the job is log-based SEO forensics.
+  Rust and Tauri desktop SEO toolkit with a Nginx/Apache log-file parser LibreCrawl lacks. For
+  log-based SEO forensics.
 closed_alternative: Screaming Frog Log File Analyzer
 stats:
   stars: 197

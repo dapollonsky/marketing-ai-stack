@@ -14,9 +14,8 @@ description: >-
   End-to-end AI marketing Streamlit suite covering SEO research, blog drafting, image generation,
   and AI content detection.
 why_it_matters: >-
-  The most credible OSS Jasper/Copy.ai alternative a marketer can self-host today — research →
-  outline → content → SEO → publish in one workflow. Nothing else in OSS ships this much of the
-  long-form-drafting job end-to-end.
+  Self-hosted blog drafting that ships the full pipeline: research, outline, SEO scoring,
+  publish. 1 Streamlit app, 20-minute install.
 closed_alternative: Jasper, Copy.ai, Writer
 stats:
   stars: 983

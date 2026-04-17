@@ -14,9 +14,8 @@ description: >-
   Community MCP server for Facebook and Instagram ads with campaign CRUD, performance queries, and
   creative retrieval.
 why_it_matters: >-
-  The only OSS Meta Ads MCP with a verified Meta Business Partner badge, giving agents a clean
-  API-compliance path to pause and rebalance without API bans. Credentials tier matters more than
-  feature breadth here.
+  Meta Business Partner-approved MCP for Facebook and Instagram ads. Clean API path and
+  compliant credentials matter once an agent actually moves budget.
 closed_alternative: Meta Ads Manager UI
 stats:
   stars: 776

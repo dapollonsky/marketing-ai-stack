@@ -14,9 +14,8 @@ description: >-
   Google's official Model Context Protocol server for GA4, exposing reports, dimensions, and
   metrics over the Data API to MCP-compatible agents.
 why_it_matters: >-
-  Official, Apache-2.0, and GA4 is the data source most marketers actually have. Paired with a
-  weekly-summary skill it produces plain-English funnel stories — replaces an afternoon of
-  building Explorations in the GA4 UI.
+  Google's official GA4 MCP server. Exposes reports, dimensions, and metrics over the Data API.
+  Pairs with a weekly-summary skill for plain-English funnel stories.
 closed_alternative: GA4 Explorations UI
 stats:
   stars: 1847

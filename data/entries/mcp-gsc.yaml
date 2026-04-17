@@ -14,9 +14,8 @@ description: >-
   MCP server that plugs Google Search Console into Claude or Cursor with tools for query
   performance, URL inspection, and sitemap status.
 why_it_matters: >-
-  Different tradeoff from DataForSEO — first-party GSC data for "what am I actually ranking for"
-  rather than third-party volume for discovery. The pick when the job is diagnosing your own
-  traffic rather than prospecting new keywords.
+  MCP for Google Search Console with query performance, URL inspection, and sitemap status.
+  Best for diagnosing your own ranking traffic rather than prospecting new keywords.
 closed_alternative: Ahrefs, Semrush
 stats:
   stars: 689

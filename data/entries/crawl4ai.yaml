@@ -14,9 +14,8 @@ description: >-
   LLM-friendly web crawler and scraper optimized for clean markdown extraction and
   structured-data output consumable by agents.
 why_it_matters: >-
-  Different persona from LibreCrawl — not an SEO tool per se, but the substrate most LLM-native
-  SEO agents compose on top of for custom technical crawls. The pick for marketing engineers
-  building bespoke audit flows.
+  LLM-friendly web crawler optimized for clean markdown and structured output. For marketing
+  engineers composing custom SEO agents on top of a crawl layer.
 closed_alternative: Firecrawl, Apify
 stats:
   stars: 64164

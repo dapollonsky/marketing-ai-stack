@@ -14,9 +14,8 @@ description: >-
   Self-hosted web-page change detector that watches URLs on a schedule and fires webhooks on diff —
   deterministic XPath/CSS selectors rather than AI inference.
 why_it_matters: >-
-  When a marketer needs reliable, cheap, deterministic monitoring of competitor pricing pages, job
-  boards, or changelogs — and will pipe the diffs through an LLM themselves — this is the pick
-  where Open Scouts' prompt-loop would be overkill.
+  Deterministic page diffs via XPath and CSS selectors, with webhooks on every change. Best for
+  cheap, reliable monitoring piped into a custom downstream agent.
 closed_alternative: Visualping, Distill.io
 stats:
   stars: 31200

@@ -14,9 +14,8 @@ description: >-
   Official Google Ads MCP exposing campaigns, budgets, keywords, ad groups, and performance
   queries through first-party tools.
 why_it_matters: >-
-  Different channel than Meta Ads MCP — Google-official, Apache-2.0. Pair with Meta Ads MCP to
-  cover the two dominant paid channels. Biggest time-saver for performance teams running Search
-  and Performance Max.
+  Google's first-party Apache-2.0 MCP covering campaigns, budgets, keywords, ad groups, and
+  performance queries. Covers Search and Performance Max alongside Meta Ads MCP.
 closed_alternative: Google Ads UI
 stats:
   stars: 377

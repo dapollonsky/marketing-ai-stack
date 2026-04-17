@@ -14,9 +14,8 @@ description: >-
   LangChain's supervisor/researcher multi-agent deep-research scaffold with MCP-native tool use
   and configurable report structures.
 why_it_matters: >-
-  Where GPT Researcher is opinionated and turnkey, this is the pick for a marketing engineer who
-  wants to customize the writer/planner stack or bolt in proprietary MCPs — different persona,
-  different tradeoff.
+  Multi-agent research scaffold with MCP-native tool use and configurable report structures.
+  For marketing engineers who want to tune the writer and planner stack.
 closed_alternative: Perplexity Pro API
 stats:
   stars: 11100

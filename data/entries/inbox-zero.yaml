@@ -14,9 +14,9 @@ description: >-
   Open-source AI email assistant that triages incoming mail, applies labels, unsubscribes from
   junk, and drafts replies on rules you define.
 why_it_matters: >-
-  Mature, self-hostable, and 10k+ stars with real momentum — the only OSS inbox-triage app with
-  rules, auto-draft, unsubscribe, and bulk processing wired together. Gives a founder-marketer a
-  working triage layer over partnership pitches and press inquiries.
+  Self-hosted AI email assistant with rules, auto-drafting, bulk unsubscribe, and a clean review
+  UI. Clears partnership pitches, press inquiries, and user replies before the inbox becomes a
+  bottleneck.
 closed_alternative: Superhuman, SaneBox
 stats:
   stars: 10455
