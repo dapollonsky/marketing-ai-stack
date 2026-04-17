@@ -173,10 +173,10 @@ function renderOpenSlots(byAtom) {
 // Collapsed per-workflow detail (alternates + cross-refs + open slots)
 // ──────────────────────────────────────────────────────────────────────
 
-function renderEntryLine(entry) {
-  const href = entry.repo || entry.url;
-  const badges = badgesFor(entry).join(' · ');
-  return `**[${entry.name}](${href})** — ${entry.why_it_matters.replace(/\s+/g, ' ').trim()}${badges ? `<br/><sub>${badges}</sub>` : ''}`;
+function depthAndMcp(entry) {
+  const depth = DEPTH_BADGE[entry.tags?.automation_depth];
+  const mcp = entry.tags?.mcp_ready ? '🔌 MCP' : '';
+  return [depth, mcp].filter(Boolean).join(' · ');
 }
 
 async function renderWorkflowDetail(wf, byAtom) {
@@ -188,28 +188,39 @@ async function renderWorkflowDetail(wf, byAtom) {
     const title = ATOM_TITLES[atom] || atom;
     const xref = CROSS_REFS[atom];
 
-    lines.push(`**${title}**  `);
+    lines.push(`### ${title}`);
+    lines.push('');
 
     if (canonicals.length > 0) {
-      for (const c of canonicals) {
-        lines.push(renderEntryLine(c) + '  ');
-      }
+      const c = canonicals[0];
+      const href = c.repo || c.url;
+      const why = c.why_it_matters.replace(/\s+/g, ' ').trim();
+      const sig = depthAndMcp(c);
+      lines.push(`**Pick →** [${c.name}](${href}) — ${why}${sig ? ` <sub>${sig}</sub>` : ''}`);
+      lines.push('');
     } else if (xref) {
-      lines.push(`↑ covered by **${xref.slug}** (see *${ATOM_TITLES[xref.from]}*)  `);
+      lines.push(`**Pick →** Covered by *${xref.slug}* — see [${ATOM_TITLES[xref.from]}](#${xref.from}).`);
+      lines.push('');
     } else {
-      lines.push(`_Open slot — no OSS canonical yet._  `);
+      lines.push(`**Pick →** _Open slot. No OSS canonical yet._`);
+      lines.push('');
     }
 
     if (alternates.length > 0) {
+      lines.push(`**Also consider:**`);
       for (const a of alternates) {
-        lines.push(`&nbsp;&nbsp;&nbsp;&nbsp;↳ ${renderEntryLine(a)}  `);
+        const href = a.repo || a.url;
+        const why = a.why_it_matters.replace(/\s+/g, ' ').trim();
+        const sig = depthAndMcp(a);
+        lines.push(`- [${a.name}](${href}) — ${why}${sig ? ` <sub>${sig}</sub>` : ''}`);
       }
+      lines.push('');
     }
 
     if (await rejectedExists(atom)) {
-      lines.push(`<sub>🗑️ [rejected candidates](rejected/${atom}.md)</sub>  `);
+      lines.push(`<sub>🗑️ [Rejected candidates](rejected/${atom}.md)</sub>`);
+      lines.push('');
     }
-    lines.push('');
   }
   return lines.join('\n');
 }
