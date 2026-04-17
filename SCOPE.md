@@ -6,7 +6,7 @@ The curated list of AI tools, MCP servers, Claude skills, and agents that plug i
 
 `marketing-ai-stack` exists because the alternative is drowning. There are 90,000+ Claude skills on skills.sh, four competing marketing skill packs with 10k+ stars each, and three awesome-lists with "Marketing" subsections of three entries. Nobody ranks. Nobody publishes rejections. Everybody ships one more blog-writing tool.
 
-The editorial wedge is: **opinion as mechanism.** We pick one canonical tool per atomic marketing job, show alternates only when they serve a genuinely different persona, and publish the rejection log for everything else. The list earns trust by what it leaves out.
+The editorial wedge is: **opinion as mechanism.** I pick one canonical tool per atomic marketing job, show alternates only when they serve a genuinely different persona, and publish the rejection log for everything else. The list earns trust by what it leaves out.
 
 ## The 3-filter inclusion test
 

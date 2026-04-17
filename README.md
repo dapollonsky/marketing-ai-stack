@@ -4,13 +4,13 @@
   ╹ ╹╹ ╹╹┗╸┗━┛┗━┛ ╹ ╹╹ ╹┗━┛   ╹ ╹╹   ┗━┛ ╹ ╹ ╹┗━╸╹ ╹
 ```
 
-_A running list of open-source tools that try to do marketing work end-to-end. One pick per job, where we can find one._
+_A running list of open-source tools that try to do marketing work end-to-end. One pick per job, where I can find one._
 
-This list collects 18 open-source tools, MCP servers, and Claude skills grouped by the 8 workflows marketers tend to run: research, positioning, content, SEO, social, paid, lifecycle, and measurement. Each workflow breaks down into smaller jobs like keyword research, ad copy variants, or inbox triage. Where we found a pick we're happy to recommend, it's listed as the canonical. 14 jobs don't have a canonical yet and are marked open.
+This list collects 18 open-source tools, MCP servers, and Claude skills grouped by the 8 workflows marketers tend to run: research, positioning, content, SEO, social, paid, lifecycle, and measurement. Each workflow breaks down into smaller jobs like keyword research, ad copy variants, or inbox triage. Where I found a pick I'm happy to recommend, it's listed as the canonical. 14 jobs don't have a canonical yet and are marked open.
 
-**How we try to pick.** We look for tools that (1) fit a daily marketing workflow, (2) do the work itself rather than just suggest it, and (3) can be installed by a non-engineering marketer in under a week. When 2 tools serve meaningfully different use cases, we list both. Tools we considered and passed on go in [rejected/](rejected/) with our reasoning, so you can disagree out loud if we got one wrong. We try to re-review picks quarterly.
+**How I try to pick.** I look for tools that (1) fit a daily marketing workflow, (2) do the work itself rather than just suggest it, and (3) can be installed by a non-engineering marketer in under a week. When 2 tools serve meaningfully different use cases, I list both. Tools I considered and passed on go in [rejected/](rejected/) with my reasoning, so you can disagree out loud if I got one wrong. I try to re-review picks quarterly.
 
-**How to help.** If a pick is wrong, a tool we missed should be here, or an open slot has been filled, open a PR against a YAML file in [data/entries/](data/entries/) and the README regenerates from there. Full flow in [CONTRIBUTING.md](CONTRIBUTING.md). Corrections welcome.
+**How to help.** If a pick is wrong, a tool I missed should be here, or an open slot has been filled, open a PR against a YAML file in [data/entries/](data/entries/) and the README regenerates from there. Full flow in [CONTRIBUTING.md](CONTRIBUTING.md). Corrections welcome.
 
 ## The shortlist
 
@@ -37,11 +37,11 @@ This list collects 18 open-source tools, MCP servers, and Claude skills grouped 
 
 ## Open slots
 
-14 marketing jobs where we haven't found an OSS pick we're comfortable recommending yet. Closed tools tend to own these today (Clay for ICP discovery, Dreamdata for attribution, Profound for LLM citation tracking, Surfer for content updates, Modash for creator outreach). If you know of an OSS tool that fits, or you're building one, open a PR and we'll take a look.
+14 marketing jobs where I haven't found an OSS pick I'm comfortable recommending yet. Closed tools tend to own these today (Clay for ICP discovery, Dreamdata for attribution, Profound for LLM citation tracking, Surfer for content updates, Modash for creator outreach). If you know of an OSS tool that fits, or you're building one, open a PR and I'll take a look.
 
 ICP discovery · Customer personas · Updating old posts · Repurposing content · Case studies · Internal linking · Creator outreach · Community replies · Landing pages from a brief · Welcome email sequences · Email list segmentation · Newsletter writing · Deliverability monitoring · Attribution summaries.
 
-Things we looked at and passed on live in [rejected/](rejected/) with our reasoning.
+Things I looked at and passed on live in [rejected/](rejected/) with my reasoning.
 
 ---
 
