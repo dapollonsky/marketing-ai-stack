@@ -15,8 +15,8 @@ why_it_matters: >-
   or Cursor without opening the Webflow Designer for every small edit.
 closed_alternative: Webflow Designer
 stats:
-  stars: 122
-  last_commit: '2026-04-10'
+  stars: 123
+  last_commit: '2026-04-16'
   license: MIT
 submitted: '2026-04-15'
 status: active
