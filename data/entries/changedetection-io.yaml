@@ -1,0 +1,27 @@
+name: changedetection.io
+slug: changedetection-io
+url: https://changedetection.io
+repo: https://github.com/dgtlmoon/changedetection.io
+workflow: research
+atom: competitor-monitoring
+rank: alternate
+tags:
+  type: app
+  ai_nativeness: substrate
+  mcp_ready: false
+  automation_depth: automate
+description: >-
+  Self-hosted web-page change detector that watches URLs on a schedule and fires webhooks on diff —
+  deterministic XPath/CSS selectors rather than AI inference.
+why_it_matters: >-
+  When a marketer needs reliable, cheap, deterministic monitoring of competitor pricing pages, job
+  boards, or changelogs — and will pipe the diffs through an LLM themselves — this is the pick
+  where Open Scouts' prompt-loop would be overkill.
+closed_alternative: Visualping, Distill.io
+stats:
+  stars: 31200
+  last_commit: '2026-04-15'
+  license: Apache-2.0
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

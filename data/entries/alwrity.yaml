@@ -2,21 +2,26 @@ name: ALwrity
 slug: alwrity
 url: https://github.com/AJaySi/ALwrity
 repo: https://github.com/AJaySi/ALwrity
-category: content
+workflow: content
+atom: long-form-drafting
+rank: canonical
 tags:
   type: app
   ai_nativeness: ai-native
   mcp_ready: false
+  automation_depth: augment
 description: >-
   End-to-end AI marketing Streamlit suite covering SEO research, blog drafting, image generation,
   and AI content detection.
 why_it_matters: >-
-  One of the few credible OSS alternatives to Jasper, Copy.ai, or Writer that a marketer can
-  self-host today — install it once and stop paying per-seat for a writing tool.
+  The most credible OSS Jasper/Copy.ai alternative a marketer can self-host today — research →
+  outline → content → SEO → publish in one workflow. Nothing else in OSS ships this much of the
+  long-form-drafting job end-to-end.
 closed_alternative: Jasper, Copy.ai, Writer
 stats:
   stars: 983
   last_commit: '2026-04-10'
   license: null
 submitted: '2026-04-15'
+last_reviewed: '2026-04-17'
 status: active

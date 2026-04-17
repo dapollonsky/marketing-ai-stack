@@ -1,0 +1,26 @@
+name: LibreCrawl
+slug: librecrawl
+url: https://github.com/PhialsBasement/LibreCrawl
+repo: https://github.com/PhialsBasement/LibreCrawl
+workflow: organic
+atom: technical-seo-crawl
+rank: canonical
+tags:
+  type: app
+  ai_nativeness: ai-enabled
+  mcp_ready: false
+  automation_depth: automate
+description: >-
+  Desktop/web app that crawls sites for technical SEO issues — redirects, canonicals, schema, Core
+  Web Vitals — with unlimited URLs and multi-user support.
+why_it_matters: >-
+  The clearest Screaming Frog replacement on the market — MIT-licensed, unlimited URLs, and enough
+  feature density to run a real technical audit without a per-seat license.
+closed_alternative: Screaming Frog, Sitebulb
+stats:
+  stars: 559
+  last_commit: '2026-04-16'
+  license: MIT
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

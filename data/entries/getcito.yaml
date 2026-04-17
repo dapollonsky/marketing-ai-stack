@@ -1,0 +1,26 @@
+name: getcito
+slug: getcito
+url: https://github.com/ai-search-guru/getcito-worlds-first-open-source-aio-aeo-or-geo-tool
+repo: https://github.com/ai-search-guru/getcito-worlds-first-open-source-aio-aeo-or-geo-tool
+workflow: organic
+atom: geo-aeo-citation-tracking
+rank: alternate
+tags:
+  type: app
+  ai_nativeness: ai-native
+  mcp_ready: false
+  automation_depth: augment
+description: >-
+  Self-hostable web app that queries LLM engines for brand citations and renders dashboards across
+  runs over time.
+why_it_matters: >-
+  Different persona from GEO AI Agent — a deployable web app with dashboards rather than a
+  CrewAI script. The pick for teams that want a tool, not a Claude thread.
+closed_alternative: Profound, AthenaHQ
+stats:
+  stars: 84
+  last_commit: '2026-03-22'
+  license: null
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

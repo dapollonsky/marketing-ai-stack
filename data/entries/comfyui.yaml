@@ -1,0 +1,27 @@
+name: ComfyUI
+slug: comfyui
+url: https://www.comfy.org
+repo: https://github.com/Comfy-Org/ComfyUI
+workflow: paid
+atom: ad-creative-variants
+rank: canonical
+tags:
+  type: app
+  ai_nativeness: ai-native
+  mcp_ready: false
+  automation_depth: augment
+description: >-
+  Node-based visual workflow app for generative image and video creation used by professional
+  creative teams for batch asset generation.
+why_it_matters: >-
+  The only OSS substrate professional creative teams (OpenAI, Netflix, EA, Amazon Studios) actually
+  use for batch ad-variant generation at scale — everything else is a hosted SaaS wrapper around
+  it. Settled atom.
+closed_alternative: AdCreative.ai, Pencil, Midjourney + Runway
+stats:
+  stars: 109073
+  last_commit: '2026-04-16'
+  license: GPL-3.0
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

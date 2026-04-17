@@ -1,0 +1,27 @@
+name: Figma MCP
+slug: figma-mcp
+url: https://github.com/GLips/Figma-Context-MCP
+repo: https://github.com/GLips/Figma-Context-MCP
+workflow: substrate
+atom: mcp-bridge
+rank: canonical
+tags:
+  type: mcp
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+  automation_depth: automate
+description: >-
+  Community MCP server that exposes Figma frames, components, and designs to Claude/Cursor for
+  design-to-code and creative review workflows.
+why_it_matters: >-
+  Canonical bridge between an agent and a design file — the pick when a marketer's brief should
+  reference actual Figma components, or when creative variants need to check against the design
+  system.
+closed_alternative: Figma Dev Mode
+stats:
+  stars: 14400
+  last_commit: '2026-04-15'
+  license: MIT
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

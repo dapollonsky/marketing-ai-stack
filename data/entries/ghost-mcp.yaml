@@ -1,0 +1,26 @@
+name: Ghost MCP
+slug: ghost-mcp
+url: https://github.com/MFYDev/ghost-mcp
+repo: https://github.com/MFYDev/ghost-mcp
+workflow: substrate
+atom: mcp-bridge
+rank: alternate
+tags:
+  type: mcp
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+  automation_depth: automate
+description: >-
+  Community MCP server for Ghost — the canonical bridge between Claude/Cursor and Ghost's content
+  and membership APIs.
+why_it_matters: >-
+  Closes the loop on the Ghost substrate entry — drafting skills push finished posts directly
+  into Ghost without manual copy-paste. Lightly maintained (flag: watch for staleness).
+closed_alternative: Ghost Admin UI
+stats:
+  stars: 171
+  last_commit: '2025-04-14'
+  license: MIT
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

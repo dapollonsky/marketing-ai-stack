@@ -1,22 +1,27 @@
 name: PostHog MCP
 slug: posthog-mcp
-url: https://posthog.com/docs/model-context-protocol
-repo: https://github.com/PostHog/mcp
-category: analytics
+url: https://mcp.posthog.com
+repo: https://github.com/PostHog/posthog
+workflow: measurement
+atom: analytics-narration
+rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
+  automation_depth: automate
 description: >-
-  Official PostHog MCP server exposing events, funnels, cohorts, insights, and feature flags to
-  MCP-compatible agents.
+  Official PostHog MCP server (hosted at mcp.posthog.com) exposing events, funnels, cohorts,
+  insights, and feature flags to MCP-compatible agents.
 why_it_matters: >-
-  Lets a growth marketer ask "which landing page converted best last week?" inside Claude and get a
-  narrated answer with the underlying funnel, replacing a tab-juggling session in the PostHog UI.
+  Different persona from GA4 MCP — product analytics with behavioral cohorts GA4 can't see. The
+  pick for product-led teams. (Server lives in the PostHog monorepo; the standalone PostHog/mcp
+  repo was archived and folded in.)
 closed_alternative: PostHog UI
 stats:
-  stars: 143
-  last_commit: '2026-01-19'
+  stars: null
+  last_commit: null
   license: MIT
 submitted: '2026-04-15'
-status: archived
+last_reviewed: '2026-04-17'
+status: active

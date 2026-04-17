@@ -2,22 +2,26 @@ name: Microsoft Content Generation Accelerator
 slug: ms-content-generation-accelerator
 url: https://github.com/microsoft/content-generation-solution-accelerator
 repo: https://github.com/microsoft/content-generation-solution-accelerator
-category: content
+workflow: content
+atom: long-form-drafting
+rank: alternate
 tags:
   type: template
   ai_nativeness: ai-native
   mcp_ready: false
+  automation_depth: augment
 description: >-
   Microsoft's multi-agent marketing content system built on Azure AI Foundry, with reference agents
   for briefing, drafting, and review.
 why_it_matters: >-
-  A reference architecture for enterprise teams spinning up an internal AI content factory — carries
-  Microsoft's name and patterns, which matters for GTM engineers who have to ship inside a
-  procurement-heavy org.
+  Different persona than ALwrity — enterprise Azure-based brief-to-asset pipeline with
+  brand-compliance validation. The pick for procurement-heavy orgs that need a Microsoft pattern
+  to ship inside.
 closed_alternative: Jasper, Writer
 stats:
   stars: 217
   last_commit: '2026-04-13'
   license: MIT
 submitted: '2026-04-15'
+last_reviewed: '2026-04-17'
 status: active

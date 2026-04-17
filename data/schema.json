@@ -2,20 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/dapollonsky/marketing-ai-stack/blob/main/data/schema.json",
   "title": "Marketing AI Stack Entry",
-  "description": "One project that belongs on the Marketing AI Stack list. Every entry must answer: what specific marketing task does this automate, and who benefits?",
+  "description": "One project that belongs on the Marketing AI Stack list. Every entry must answer: what specific marketing atom does this automate, and is it the canonical pick, an alternate, or substrate?",
   "type": "object",
   "required": [
     "name",
     "slug",
     "url",
     "repo",
-    "category",
+    "workflow",
+    "atom",
+    "rank",
     "tags",
     "description",
     "why_it_matters",
     "closed_alternative",
     "stats",
     "submitted",
+    "last_reviewed",
     "status"
   ],
   "additionalProperties": false,
@@ -41,23 +44,36 @@
       "type": ["string", "null"],
       "description": "GitHub repo URL. May be null for hosted services without an open component."
     },
-    "category": {
+    "workflow": {
       "type": "string",
       "enum": [
-        "content",
-        "seo",
-        "social",
-        "ads",
-        "email",
-        "analytics",
         "research",
-        "integrations"
-      ]
+        "positioning",
+        "content",
+        "organic",
+        "social",
+        "paid",
+        "lifecycle",
+        "measurement",
+        "substrate"
+      ],
+      "description": "The marketer workflow bucket this entry serves. Substrate is an appendix, not a front-page workflow."
+    },
+    "atom": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "maxLength": 60,
+      "description": "The atomic marketing job this entry serves (kebab-case). Substrate entries may use 'mcp-bridge', 'platform', or 'orchestrator' as catch-all atoms."
+    },
+    "rank": {
+      "type": "string",
+      "enum": ["canonical", "alternate"],
+      "description": "canonical = the one featured pick for this atom; alternate = a differentiated second option (collapsed in README)."
     },
     "tags": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "ai_nativeness", "mcp_ready"],
+      "required": ["type", "ai_nativeness", "mcp_ready", "automation_depth"],
       "properties": {
         "type": {
           "type": "string",
@@ -71,7 +87,8 @@
             "template",
             "cms",
             "crm",
-            "library"
+            "library",
+            "plugin"
           ]
         },
         "ai_nativeness": {
@@ -80,6 +97,11 @@
         },
         "mcp_ready": {
           "type": "boolean"
+        },
+        "automation_depth": {
+          "type": "string",
+          "enum": ["automate", "augment", "assist"],
+          "description": "How autonomous the workflow is. automate = agent runs it end-to-end; augment = AI does 60-80%, marketer drives; assist = AI helps at margins."
         }
       }
     },
@@ -93,7 +115,7 @@
       "type": "string",
       "minLength": 20,
       "maxLength": 400,
-      "description": "One sentence: the specific marketing task it automates, naming persona and outcome. No adjectives, no fluff."
+      "description": "One sentence: the specific marketing atom it automates, naming persona and outcome. No adjectives, no fluff."
     },
     "closed_alternative": {
       "type": ["string", "null"],
@@ -115,6 +137,11 @@
       "type": "string",
       "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
       "description": "Date the entry was first added to the list (YYYY-MM-DD)"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date the curator last re-evaluated this entry's rank vs. alternatives. Quarterly re-review is the target cadence."
     },
     "status": {
       "type": "string",

@@ -1,23 +1,27 @@
 name: Zapier MCP
 slug: zapier-mcp
 url: https://mcp.zapier.com
-repo: https://github.com/zapier/zapier-mcp
-category: integrations
+repo: null
+workflow: substrate
+atom: orchestrator
+rank: canonical
 tags:
   type: aggregator
   ai_nativeness: ai-enabled
   mcp_ready: true
+  automation_depth: automate
 description: >-
   Remote MCP server from Zapier that exposes 9,000+ apps and 40,000+ actions through a single
   endpoint.
 why_it_matters: >-
-  Instantly gives an agent read/write access to Outreach, Salesloft, Front, Lemlist, ActiveCampaign,
-  Marketo, Iterable, Close, and every other tool without a native MCP — the fastest way to backfill
-  a long tail of GTM integrations.
+  Instantly gives an agent read/write access to Outreach, Salesloft, Front, Lemlist,
+  ActiveCampaign, Marketo, Iterable, Close, and every other tool without a native MCP — the
+  fastest way to backfill a long tail of GTM integrations.
 closed_alternative: Direct per-tool integrations
 stats:
   stars: null
   last_commit: null
   license: null
 submitted: '2026-04-15'
+last_reviewed: '2026-04-17'
 status: active

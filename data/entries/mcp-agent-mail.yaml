@@ -1,0 +1,27 @@
+name: mcp_agent_mail
+slug: mcp-agent-mail
+url: https://github.com/Dicklesworthstone/mcp_agent_mail
+repo: https://github.com/Dicklesworthstone/mcp_agent_mail
+workflow: lifecycle
+atom: inbox-triage
+rank: alternate
+tags:
+  type: mcp
+  ai_nativeness: ai-native
+  mcp_ready: true
+  automation_depth: automate
+description: >-
+  Agent-to-agent mail layer exposed as an MCP server — think thread-based coordination primitive
+  for Claude Code and other agents rather than a Gmail UI.
+why_it_matters: >-
+  Different persona from Inbox Zero — the pick when the job is letting multiple agents coordinate
+  over mail-like threads, not triaging a human inbox. Emerging pattern for Claude Code-heavy
+  marketing teams.
+closed_alternative: Slack huddles, Notion
+stats:
+  stars: 1900
+  last_commit: '2026-04-10'
+  license: MIT
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

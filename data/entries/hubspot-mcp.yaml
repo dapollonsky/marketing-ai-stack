@@ -2,22 +2,27 @@ name: HubSpot MCP
 slug: hubspot-mcp
 url: https://developers.hubspot.com/mcp
 repo: null
-category: integrations
+workflow: substrate
+atom: mcp-bridge
+rank: canonical
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
+  automation_depth: automate
 description: >-
   First-party HubSpot MCP (public beta) hosted at mcp.hubspot.com with tools for contacts,
-  companies, deals, tickets, carts, products, orders, invoices, quotes, subscriptions, lists, and
-  engagements.
+  companies, deals, tickets, carts, products, orders, invoices, quotes, subscriptions, lists,
+  and engagements.
 why_it_matters: >-
-  Lets marketers and reps drive the entire HubSpot CRM from an agent without touching the native UI
-  or waiting on Breeze — the default entry point for any HubSpot-shop GTM automation built in 2026.
-closed_alternative: HubSpot's native UI / Breeze AI
+  Lets marketers and reps drive the entire HubSpot CRM from an agent without touching the native
+  UI or waiting on Breeze — the default entry point for any HubSpot-shop GTM automation built
+  in 2026.
+closed_alternative: HubSpot native UI / Breeze AI
 stats:
   stars: null
   last_commit: null
   license: null
 submitted: '2026-04-15'
+last_reviewed: '2026-04-17'
 status: active

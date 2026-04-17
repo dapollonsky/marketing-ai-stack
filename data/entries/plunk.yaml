@@ -1,0 +1,26 @@
+name: Plunk
+slug: plunk
+url: https://useplunk.com
+repo: https://github.com/useplunk/plunk
+workflow: substrate
+atom: platform
+rank: alternate
+tags:
+  type: app
+  ai_nativeness: substrate
+  mcp_ready: false
+  automation_depth: assist
+description: >-
+  AWS SES-backed self-hosted email platform with a visual workflow builder, transactional +
+  marketing sending, and a modern dashboard.
+why_it_matters: >-
+  The "modern listmonk" gap — open-sourced Dec 2025, actively developed, AGPL-3.0. Pick when you
+  want a contemporary stack (Next.js + SES) rather than listmonk's Go binary.
+closed_alternative: Resend, Loops, Mailchimp
+stats:
+  stars: 5000
+  last_commit: '2026-04-14'
+  license: AGPL-3.0
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

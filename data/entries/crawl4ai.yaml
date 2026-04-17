@@ -1,0 +1,27 @@
+name: crawl4ai
+slug: crawl4ai
+url: https://crawl4ai.com
+repo: https://github.com/unclecode/crawl4ai
+workflow: organic
+atom: technical-seo-crawl
+rank: alternate
+tags:
+  type: library
+  ai_nativeness: substrate
+  mcp_ready: true
+  automation_depth: augment
+description: >-
+  LLM-friendly web crawler and scraper optimized for clean markdown extraction and
+  structured-data output consumable by agents.
+why_it_matters: >-
+  Different persona from LibreCrawl — not an SEO tool per se, but the substrate most LLM-native
+  SEO agents compose on top of for custom technical crawls. The pick for marketing engineers
+  building bespoke audit flows.
+closed_alternative: Firecrawl, Apify
+stats:
+  stars: 64164
+  last_commit: '2026-04-15'
+  license: Apache-2.0
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

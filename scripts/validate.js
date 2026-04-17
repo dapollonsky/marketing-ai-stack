@@ -29,6 +29,9 @@ async function main() {
 
   let errorCount = 0;
   const slugs = new Set();
+  // atomCanonicals[atom] = count of active canonicals
+  const atomCanonicals = {};
+  const atomAlternates = {};
 
   for (const file of files) {
     const fp = path.join(ENTRIES_DIR, file);
@@ -79,6 +82,34 @@ async function main() {
       console.error(`✗ ${file}: url is not a valid URL`);
       errorCount++;
     }
+
+    // Track atom-level stats for only active entries
+    if (entry.status === 'active') {
+      const key = entry.atom;
+      if (entry.rank === 'canonical') {
+        atomCanonicals[key] = (atomCanonicals[key] || 0) + 1;
+      } else if (entry.rank === 'alternate') {
+        atomAlternates[key] = (atomAlternates[key] || 0) + 1;
+      }
+    }
+  }
+
+  // Enforce editorial rules on active entries:
+  // - For workflow atoms (not substrate atoms), at most 1 canonical per atom.
+  // - For workflow atoms, at most 2 alternates per atom (warn, not error).
+  const SUBSTRATE_ATOMS = new Set(['mcp-bridge', 'platform', 'orchestrator']);
+  for (const [atom, count] of Object.entries(atomCanonicals)) {
+    if (SUBSTRATE_ATOMS.has(atom)) continue;
+    if (count > 1) {
+      console.error(`✗ atom "${atom}" has ${count} active canonicals — only one allowed`);
+      errorCount++;
+    }
+  }
+  for (const [atom, count] of Object.entries(atomAlternates)) {
+    if (SUBSTRATE_ATOMS.has(atom)) continue;
+    if (count > 2) {
+      console.warn(`⚠ atom "${atom}" has ${count} active alternates — curator should trim to ≤2`);
+    }
   }
 
   if (errorCount > 0) {
@@ -86,7 +117,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`✓ ${files.length} entries valid`);
+  console.log(`✓ ${files.length} entries valid (${Object.keys(atomCanonicals).length} atoms with canonicals)`);
 }
 
 main().catch((e) => {

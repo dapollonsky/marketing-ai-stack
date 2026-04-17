@@ -1,0 +1,26 @@
+name: Beehiiv MCP
+slug: beehiiv-mcp
+url: https://github.com/danvega/beehiiv-mcp-server
+repo: https://github.com/danvega/beehiiv-mcp-server
+workflow: substrate
+atom: mcp-bridge
+rank: alternate
+tags:
+  type: mcp
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+  automation_depth: automate
+description: >-
+  Community MCP server for Beehiiv's newsletter API, plus an official hosted Beehiiv MCP available
+  for paid accounts.
+why_it_matters: >-
+  Closes the loop for newsletter drafting agents on Beehiiv — hand an LLM-written issue directly
+  to Beehiiv for preview and send instead of pasting into the editor.
+closed_alternative: Beehiiv web editor
+stats:
+  stars: 19
+  last_commit: '2025-06-30'
+  license: MIT
+submitted: '2026-04-17'
+last_reviewed: '2026-04-17'
+status: active

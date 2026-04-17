@@ -2,21 +2,26 @@ name: Google Ads MCP
 slug: google-ads-mcp
 url: https://github.com/googleads/google-ads-mcp
 repo: https://github.com/googleads/google-ads-mcp
-category: ads
+workflow: paid
+atom: budget-rebalancing
+rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
+  automation_depth: augment
 description: >-
-  Official Google Ads MCP exposing campaigns, budgets, keywords, ad groups, and performance queries
-  through first-party tools.
+  Official Google Ads MCP exposing campaigns, budgets, keywords, ad groups, and performance
+  queries through first-party tools.
 why_it_matters: >-
-  Lets paid teams drive campaigns by natural language without learning the Google Ads UI — the
-  biggest single time-saver for performance marketers running Search and Performance Max in 2026.
+  Different channel than Meta Ads MCP — Google-official, Apache-2.0. Pair with Meta Ads MCP to
+  cover the two dominant paid channels. Biggest time-saver for performance teams running Search
+  and Performance Max.
 closed_alternative: Google Ads UI
 stats:
   stars: 377
   last_commit: '2026-04-10'
   license: Apache-2.0
 submitted: '2026-04-15'
+last_reviewed: '2026-04-17'
 status: active
