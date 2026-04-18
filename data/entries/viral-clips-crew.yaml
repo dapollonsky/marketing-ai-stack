@@ -2,26 +2,21 @@ name: Viral Clips Crew
 slug: viral-clips-crew
 url: https://github.com/alexfazio/viral-clips-crew
 repo: https://github.com/alexfazio/viral-clips-crew
-workflow: social
-atom: long-to-shorts
-rank: alternate
 tags:
   type: template
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: augment
 description: >-
   CrewAI template that edits long-form video into viral clips through transcription, highlight
   selection, and cutting agents.
 why_it_matters: >-
-  CrewAI template for transcription, highlight selection, and cutting agents. A reference
-  pattern for custom video pipelines, not a shipped product. Author describes it as
-  "vibe-coded," so expect to maintain any fork yourself.
+  CrewAI template for transcription, highlight selection, and cutting agents. A reference pattern
+  for custom video pipelines, not a shipped product. Author describes it as "vibe-coded," so expect
+  to maintain any fork yourself.
 closed_alternative: Opus Clip, Vizard
 stats:
-  stars: 755
+  stars: 756
   last_commit: '2026-02-16'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

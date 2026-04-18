@@ -2,25 +2,20 @@ name: DataForSEO MCP
 slug: dataforseo-mcp
 url: https://dataforseo.com
 repo: https://github.com/dataforseo/mcp-server-typescript
-workflow: organic
-atom: keyword-research
-rank: canonical
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
-  Official DataForSEO MCP covering the full DataForSEO API — SERP, keywords, on-page, backlinks,
-  and content analysis.
+  Official DataForSEO MCP covering the full DataForSEO API — SERP, keywords, on-page, backlinks, and
+  content analysis.
 why_it_matters: >-
-  Commercial-grade SEO data via MCP. Volume, CPC, difficulty, all agent-ready. The data
-  foundation Ahrefs and Semrush sell, reachable from any MCP client.
+  Commercial-grade SEO data via MCP. Volume, CPC, difficulty, all agent-ready. The data foundation
+  Ahrefs and Semrush sell, reachable from any MCP client.
 closed_alternative: Semrush, Ahrefs
 stats:
-  stars: 176
+  stars: 177
   last_commit: '2026-04-14'
   license: Apache-2.0
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
