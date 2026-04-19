@@ -2,24 +2,18 @@ name: Airtable MCP
 slug: airtable-mcp
 url: https://github.com/domdomegg/airtable-mcp-server
 repo: https://github.com/domdomegg/airtable-mcp-server
-workflow: substrate
-atom: mcp-bridge
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
-description: >-
-  Community MCP server for Airtable with read/write access to bases, tables, and records.
+description: Community MCP server for Airtable with read/write access to bases, tables, and records.
 why_it_matters: >-
   The default bridge for teams running content calendars, campaign trackers, or CRM-lite views in
   Airtable — agents can add rows and query bases without bespoke integrations.
 closed_alternative: Airtable AI
 stats:
-  stars: 437
-  last_commit: '2026-04-12'
+  stars: 438
+  last_commit: '2026-04-11'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

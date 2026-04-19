@@ -2,25 +2,20 @@ name: OpenShorts
 slug: openshorts
 url: https://github.com/mutonby/openshorts
 repo: https://github.com/mutonby/openshorts
-workflow: social
-atom: long-to-shorts
-rank: alternate
 tags:
   type: app
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   OSS clip-from-existing-video app with YouTube Studio integration, no watermarks, and LLM-driven
   highlight selection.
 why_it_matters: >-
-  Clips existing long-form video into shorts with YouTube Studio integration and no watermarks.
-  For podcast and YouTube repurposing rather than topic-from-scratch generation.
+  Clips existing long-form video into shorts with YouTube Studio integration and no watermarks. For
+  podcast and YouTube repurposing rather than topic-from-scratch generation.
 closed_alternative: OpusClip, Vizard, Submagic
 stats:
-  stars: 434
-  last_commit: '2026-04-05'
+  stars: 439
+  last_commit: '2026-04-10'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

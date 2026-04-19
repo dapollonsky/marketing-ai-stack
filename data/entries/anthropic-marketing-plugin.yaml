@@ -2,26 +2,21 @@ name: Anthropic Marketing Plugin
 slug: anthropic-marketing-plugin
 url: https://www.anthropic.com/cowork
 repo: https://github.com/anthropics/knowledge-work-plugins
-workflow: positioning
-atom: campaign-brief
-rank: canonical
 tags:
   type: plugin
   ai_nativeness: ai-native
   mcp_ready: true
-  automation_depth: automate
 description: >-
   Anthropic's official knowledge-work plugin bundle for marketing — ships campaign-plan,
   content-creation, competitive-brief, seo-audit, email-sequence, brand-review, and
   performance-report skills with MCP wiring to Notion, HubSpot, Ahrefs, and Supermetrics.
 why_it_matters: >-
-  First-party plugin from Anthropic covering campaign briefs, launch messaging, and battlecards
-  in 1 install. Ships with MCP wiring to Notion, HubSpot, Ahrefs, and Supermetrics.
+  First-party plugin from Anthropic covering campaign briefs, launch messaging, and battlecards in 1
+  install. Ships with MCP wiring to Notion, HubSpot, Ahrefs, and Supermetrics.
 closed_alternative: Jasper Brand Voice, Writer Marketing, HubSpot Breeze
 stats:
-  stars: 11300
-  last_commit: '2026-04-14'
-  license: MIT
+  stars: 11350
+  last_commit: '2026-04-17'
+  license: Apache-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active
