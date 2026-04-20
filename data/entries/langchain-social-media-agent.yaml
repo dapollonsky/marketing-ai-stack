@@ -2,25 +2,20 @@ name: LangChain Social Media Agent
 slug: langchain-social-media-agent
 url: https://github.com/langchain-ai/social-media-agent
 repo: https://github.com/langchain-ai/social-media-agent
-workflow: social
-atom: multi-channel-scheduling
-rank: alternate
 tags:
   type: agent
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   LangGraph-based sourcing and drafting agent with human-in-the-loop approval over Slack for
   cross-posting to LinkedIn and X.
 why_it_matters: >-
-  LangGraph sourcing and drafting agent with Slack human-in-the-loop approval. For teams that
-  want review queues before social sends rather than a calendar.
+  LangGraph sourcing and drafting agent with Slack human-in-the-loop approval. For teams that want
+  review queues before social sends rather than a calendar.
 closed_alternative: Buffer AI, Hootsuite Assistant
 stats:
-  stars: 2489
-  last_commit: '2026-04-10'
+  stars: 2496
+  last_commit: '2026-04-20'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

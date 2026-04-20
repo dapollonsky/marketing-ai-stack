@@ -2,25 +2,20 @@ name: mcp-gsc
 slug: mcp-gsc
 url: https://github.com/AminForou/mcp-gsc
 repo: https://github.com/AminForou/mcp-gsc
-workflow: organic
-atom: keyword-research
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   MCP server that plugs Google Search Console into Claude or Cursor with tools for query
   performance, URL inspection, and sitemap status.
 why_it_matters: >-
-  MCP for Google Search Console with query performance, URL inspection, and sitemap status.
-  Best for diagnosing your own ranking traffic rather than prospecting new keywords.
+  MCP for Google Search Console with query performance, URL inspection, and sitemap status. Best for
+  diagnosing your own ranking traffic rather than prospecting new keywords.
 closed_alternative: Ahrefs, Semrush
 stats:
-  stars: 689
-  last_commit: '2026-04-10'
+  stars: 702
+  last_commit: '2026-04-18'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

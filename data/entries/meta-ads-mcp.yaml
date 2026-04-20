@@ -2,25 +2,20 @@ name: Meta Ads MCP
 slug: meta-ads-mcp
 url: https://github.com/pipeboard-co/meta-ads-mcp
 repo: https://github.com/pipeboard-co/meta-ads-mcp
-workflow: paid
-atom: budget-rebalancing
-rank: canonical
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: augment
 description: >-
   Community MCP server for Facebook and Instagram ads with campaign CRUD, performance queries, and
   creative retrieval.
 why_it_matters: >-
-  Meta Business Partner-approved MCP for Facebook and Instagram ads. Clean API path and
-  compliant credentials matter once an agent actually moves budget.
+  Meta Business Partner-approved MCP for Facebook and Instagram ads. Clean API path and compliant
+  credentials matter once an agent actually moves budget.
 closed_alternative: Meta Ads Manager UI
 stats:
-  stars: 776
-  last_commit: '2026-04-14'
+  stars: 795
+  last_commit: '2026-04-17'
   license: NOASSERTION
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

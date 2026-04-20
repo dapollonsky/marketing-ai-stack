@@ -2,25 +2,20 @@ name: Trigger.dev
 slug: trigger-dev
 url: https://trigger.dev
 repo: https://github.com/triggerdotdev/trigger.dev
-workflow: substrate
-atom: orchestrator
-rank: alternate
 tags:
   type: framework
   ai_nativeness: substrate
   mcp_ready: false
-  automation_depth: automate
 description: >-
-  TypeScript-native background jobs and scheduled agents framework with observability, retries,
-  and long-running task support.
+  TypeScript-native background jobs and scheduled agents framework with observability, retries, and
+  long-running task support.
 why_it_matters: >-
-  Different persona from n8n — code-first, for developer-marketers building durable agent loops
-  in a real codebase rather than a visual node editor.
+  Different persona from n8n — code-first, for developer-marketers building durable agent loops in a
+  real codebase rather than a visual node editor.
 closed_alternative: Inngest Cloud, Temporal Cloud
 stats:
-  stars: 14600
-  last_commit: '2026-04-15'
+  stars: 14605
+  last_commit: '2026-04-19'
   license: Apache-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active
