@@ -2,25 +2,20 @@ name: Webflow MCP
 slug: webflow-mcp
 url: https://github.com/webflow/mcp-server
 repo: https://github.com/webflow/mcp-server
-workflow: substrate
-atom: mcp-bridge
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   Official Webflow MCP server for the Webflow Data API, exposing CMS items, collections, and site
   publishing actions to MCP-compatible agents.
 why_it_matters: >-
-  Lets a content marketer update CMS entries, swap hero copy, and publish site changes from
-  Claude or Cursor without opening the Webflow Designer for every small edit.
+  Lets a content marketer update CMS entries, swap hero copy, and publish site changes from Claude
+  or Cursor without opening the Webflow Designer for every small edit.
 closed_alternative: Webflow Designer
 stats:
-  stars: 122
-  last_commit: '2026-04-10'
+  stars: 123
+  last_commit: '2026-04-16'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

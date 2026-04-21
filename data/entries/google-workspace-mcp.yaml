@@ -2,26 +2,21 @@ name: Google Workspace MCP
 slug: google-workspace-mcp
 url: https://github.com/taylorwilsdon/google_workspace_mcp
 repo: https://github.com/taylorwilsdon/google_workspace_mcp
-workflow: substrate
-atom: mcp-bridge
-rank: canonical
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   Full Google Workspace MCP server with OAuth 2.1 multi-user support covering Gmail, Calendar,
   Drive, Docs, and Sheets behind a single endpoint.
 why_it_matters: >-
-  Replaces four or five separate Google integrations with one hardened server, so any GTM agent
-  can read email threads, book meetings, and update spreadsheets without the team standing up
-  its own OAuth gauntlet.
+  Replaces four or five separate Google integrations with one hardened server, so any GTM agent can
+  read email threads, book meetings, and update spreadsheets without the team standing up its own
+  OAuth gauntlet.
 closed_alternative: Google Workspace native apps
 stats:
-  stars: 2123
-  last_commit: '2026-04-15'
+  stars: 2164
+  last_commit: '2026-04-21'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

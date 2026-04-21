@@ -2,26 +2,20 @@ name: WordPress MCP Adapter
 slug: wordpress-mcp
 url: https://github.com/WordPress/mcp-adapter
 repo: https://github.com/WordPress/mcp-adapter
-workflow: substrate
-atom: mcp-bridge
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
-  Official WordPress MCP adapter — the canonical bridge for agent-driven edits to WordPress
-  sites, replacing the archived Automattic/wordpress-mcp repo.
+  Official WordPress MCP adapter — the canonical bridge for agent-driven edits to WordPress sites,
+  replacing the archived Automattic/wordpress-mcp repo.
 why_it_matters: >-
-  The default WordPress MCP going forward — any marketer operating on WordPress can hand CMS
-  edits, post publishing, and media uploads to Claude or Cursor instead of clicking through the
-  admin.
+  The default WordPress MCP going forward — any marketer operating on WordPress can hand CMS edits,
+  post publishing, and media uploads to Claude or Cursor instead of clicking through the admin.
 closed_alternative: WordPress admin UI
 stats:
-  stars: 893
-  last_commit: '2026-04-10'
+  stars: 914
+  last_commit: '2026-04-16'
   license: GPL-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

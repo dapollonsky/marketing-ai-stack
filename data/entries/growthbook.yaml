@@ -2,25 +2,20 @@ name: GrowthBook
 slug: growthbook
 url: https://www.growthbook.io
 repo: https://github.com/growthbook/growthbook
-workflow: paid
-atom: ab-test-analysis
-rank: canonical
 tags:
   type: app
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   Open-source experimentation platform with Bayesian and frequentist engines, CUPED, sequential
   testing, and an official MCP server for agent-driven analysis.
 why_it_matters: >-
-  Bayesian and frequentist experimentation platform with CUPED, sequential testing, SRM checks,
-  and an official MCP. Handles LP and funnel tests end-to-end. Settled atom.
+  Bayesian and frequentist experimentation platform with CUPED, sequential testing, SRM checks, and
+  an official MCP. Handles LP and funnel tests end-to-end. Settled atom.
 closed_alternative: Optimizely, VWO, Statsig, Eppo
 stats:
-  stars: 7663
-  last_commit: '2026-04-17'
-  license: MIT
+  stars: 7673
+  last_commit: '2026-04-21'
+  license: NOASSERTION
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

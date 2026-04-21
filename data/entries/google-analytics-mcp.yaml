@@ -2,25 +2,20 @@ name: Google Analytics MCP
 slug: google-analytics-mcp
 url: https://github.com/googleanalytics/google-analytics-mcp
 repo: https://github.com/googleanalytics/google-analytics-mcp
-workflow: measurement
-atom: analytics-narration
-rank: canonical
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
-  Google's official Model Context Protocol server for GA4, exposing reports, dimensions, and
-  metrics over the Data API to MCP-compatible agents.
+  Google's official Model Context Protocol server for GA4, exposing reports, dimensions, and metrics
+  over the Data API to MCP-compatible agents.
 why_it_matters: >-
   Google's official GA4 MCP server. Exposes reports, dimensions, and metrics over the Data API.
   Pairs with a weekly-summary skill for plain-English funnel stories.
 closed_alternative: GA4 Explorations UI
 stats:
-  stars: 1847
-  last_commit: '2026-04-08'
+  stars: 1891
+  last_commit: '2026-04-16'
   license: Apache-2.0
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

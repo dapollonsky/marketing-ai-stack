@@ -2,25 +2,20 @@ name: Mixpost
 slug: mixpost
 url: https://mixpost.app
 repo: https://github.com/inovector/mixpost
-workflow: social
-atom: multi-channel-scheduling
-rank: alternate
 tags:
   type: app
   ai_nativeness: ai-enabled
   mcp_ready: false
-  automation_depth: automate
 description: >-
-  Self-hosted social media management app covering scheduling, calendars, and analytics across
-  major channels.
+  Self-hosted social media management app covering scheduling, calendars, and analytics across major
+  channels.
 why_it_matters: >-
-  MIT-licensed social scheduler covering the same channels as Postiz. Best for commercial
-  resale or closed-source embedding where AGPL would block you.
+  MIT-licensed social scheduler covering the same channels as Postiz. Best for commercial resale or
+  closed-source embedding where AGPL would block you.
 closed_alternative: Buffer, Hootsuite
 stats:
-  stars: 3108
-  last_commit: '2026-04-12'
+  stars: 3119
+  last_commit: '2026-03-16'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active
