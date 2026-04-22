@@ -2,26 +2,21 @@ name: Inbox Zero
 slug: inbox-zero
 url: https://getinboxzero.com
 repo: https://github.com/elie222/inbox-zero
-workflow: lifecycle
-atom: inbox-triage
-rank: canonical
 tags:
   type: app
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: augment
 description: >-
-  Open-source AI email assistant that triages incoming mail, applies labels, unsubscribes from
-  junk, and drafts replies on rules you define.
+  Open-source AI email assistant that triages incoming mail, applies labels, unsubscribes from junk,
+  and drafts replies on rules you define.
 why_it_matters: >-
-  Self-hosted AI email assistant with rules, auto-drafting, bulk unsubscribe, and a clean review
-  UI. Clears partnership pitches, press inquiries, and user replies before the inbox becomes a
+  Self-hosted AI email assistant with rules, auto-drafting, bulk unsubscribe, and a clean review UI.
+  Clears partnership pitches, press inquiries, and user replies before the inbox becomes a
   bottleneck.
 closed_alternative: Superhuman, SaneBox
 stats:
-  stars: 10455
-  last_commit: '2026-04-15'
+  stars: 10506
+  last_commit: '2026-04-22'
   license: NOASSERTION
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

@@ -2,26 +2,21 @@ name: noScribe
 slug: noscribe
 url: https://github.com/kaixxx/noScribe
 repo: https://github.com/kaixxx/noScribe
-workflow: research
-atom: customer-voice-extraction
-rank: canonical
 tags:
   type: app
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
-  Local-first transcription app built on Whisper + pyannote with a built-in review editor
-  optimized for qualitative research interviews.
+  Local-first transcription app built on Whisper + pyannote with a built-in review editor optimized
+  for qualitative research interviews.
 why_it_matters: >-
-  Local-first interview transcription with speaker diarization and a usable review editor. No
-  cloud hop for sensitive customer calls. Everything downstream (themes, quotes, pain points) is
-  a single LLM pass.
+  Local-first interview transcription with speaker diarization and a usable review editor. No cloud
+  hop for sensitive customer calls. Everything downstream (themes, quotes, pain points) is a single
+  LLM pass.
 closed_alternative: Otter.ai, Descript, Dovetail
 stats:
-  stars: 1800
-  last_commit: '2026-04-10'
+  stars: 1870
+  last_commit: '2026-04-17'
   license: GPL-3.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

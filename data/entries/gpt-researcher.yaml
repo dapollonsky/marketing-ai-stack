@@ -2,14 +2,10 @@ name: GPT Researcher
 slug: gpt-researcher
 url: https://gptr.dev
 repo: https://github.com/assafelovic/gpt-researcher
-workflow: research
-atom: market-scans
-rank: canonical
 tags:
   type: agent
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   Autonomous research agent that does tree-like exploration of a topic area and returns a
   citation-backed structured report.
@@ -18,9 +14,8 @@ why_it_matters: >-
   brief. 26k stars, actively maintained. Describe the market area, get a structured report back.
 closed_alternative: Perplexity Pro, ChatGPT Deep Research
 stats:
-  stars: 26500
-  last_commit: '2026-04-14'
+  stars: 26600
+  last_commit: '2026-04-16'
   license: Apache-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

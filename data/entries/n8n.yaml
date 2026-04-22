@@ -2,14 +2,10 @@ name: n8n
 slug: n8n
 url: https://n8n.io
 repo: https://github.com/n8n-io/n8n
-workflow: substrate
-atom: orchestrator
-rank: canonical
 tags:
   type: app
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   Fair-code workflow automation tool with 400+ integrations, a visual node editor, and a growing
   library of AI and agent nodes.
@@ -18,9 +14,8 @@ why_it_matters: >-
   competitor diffs, deliverability watchers, GEO citation scans. Huge community template library.
 closed_alternative: Zapier, Make
 stats:
-  stars: 184000
-  last_commit: '2026-04-16'
+  stars: 185047
+  last_commit: '2026-04-22'
   license: NOASSERTION
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

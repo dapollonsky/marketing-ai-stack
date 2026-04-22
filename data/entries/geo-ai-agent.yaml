@@ -2,26 +2,21 @@ name: GEO AI Agent
 slug: geo-ai-agent
 url: https://github.com/brightdata/geo-ai-agent
 repo: https://github.com/brightdata/geo-ai-agent
-workflow: organic
-atom: geo-aeo-citation-tracking
-rank: canonical
 tags:
   type: agent
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: augment
 description: >-
   Bright Data's CrewAI agent for Generative Engine Optimisation that audits how a brand appears
   across LLM answer engines.
 why_it_matters: >-
   Tracks how a brand shows up in ChatGPT, Perplexity, and Gemini answers over time. Bright Data
-  scraper under a CrewAI loop. Category is still unsettled, so expect this entry to move as
-  better tools ship.
+  scraper under a CrewAI loop. Category is still unsettled, so expect this entry to move as better
+  tools ship.
 closed_alternative: Profound, AthenaHQ, Peec AI
 stats:
   stars: 153
   last_commit: '2025-10-20'
   license: null
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
-status: active
+status: watchlist

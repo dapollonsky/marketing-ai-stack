@@ -2,25 +2,20 @@ name: Ghost
 slug: ghost
 url: https://ghost.org
 repo: https://github.com/TryGhost/Ghost
-workflow: substrate
-atom: platform
-rank: canonical
 tags:
   type: cms
   ai_nativeness: substrate
   mcp_ready: false
-  automation_depth: assist
 description: >-
-  Publishing platform with built-in newsletter, membership, and Stripe-backed subscriptions —
-  the canonical OSS creator stack.
+  Publishing platform with built-in newsletter, membership, and Stripe-backed subscriptions — the
+  canonical OSS creator stack.
 why_it_matters: >-
-  The substrate under most serious OSS newsletter + blog operations. Pair with Ghost MCP and an
-  LLM drafting skill for an end-to-end writer-to-send pipeline the team owns.
+  The substrate under most serious OSS newsletter + blog operations. Pair with Ghost MCP and an LLM
+  drafting skill for an end-to-end writer-to-send pipeline the team owns.
 closed_alternative: Beehiiv, Substack, Medium
 stats:
-  stars: 52500
-  last_commit: '2026-04-15'
+  stars: 52606
+  last_commit: '2026-04-22'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active
