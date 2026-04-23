@@ -2,25 +2,20 @@ name: crawl4ai
 slug: crawl4ai
 url: https://crawl4ai.com
 repo: https://github.com/unclecode/crawl4ai
-workflow: organic
-atom: technical-seo-crawl
-rank: alternate
 tags:
   type: library
   ai_nativeness: substrate
   mcp_ready: true
-  automation_depth: augment
 description: >-
-  LLM-friendly web crawler and scraper optimized for clean markdown extraction and
-  structured-data output consumable by agents.
+  LLM-friendly web crawler and scraper optimized for clean markdown extraction and structured-data
+  output consumable by agents.
 why_it_matters: >-
   LLM-friendly web crawler optimized for clean markdown and structured output. For marketing
   engineers composing custom SEO agents on top of a crawl layer.
 closed_alternative: Firecrawl, Apify
 stats:
-  stars: 64164
-  last_commit: '2026-04-15'
+  stars: 64470
+  last_commit: '2026-04-20'
   license: Apache-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

@@ -2,14 +2,10 @@ name: SEO & GEO Claude Skills
 slug: seo-geo-claude-skills
 url: https://github.com/aaron-he-zhu/seo-geo-claude-skills
 repo: https://github.com/aaron-he-zhu/seo-geo-claude-skills
-workflow: organic
-atom: on-page-seo-audit
-rank: canonical
 tags:
   type: skill-pack
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   Focused Claude skill pack (~20 skills) for SEO and GEO, including a first-class on-page auditor
   with an explicit EEAT + CITE scoring rubric.
@@ -18,9 +14,8 @@ why_it_matters: >-
   Claude Code with an EEAT and CITE scoring rubric. Narrow scope by design.
 closed_alternative: Surfer SEO, Clearscope
 stats:
-  stars: 1040
-  last_commit: '2026-04-17'
-  license: MIT
+  stars: 1135
+  last_commit: '2026-04-18'
+  license: Apache-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

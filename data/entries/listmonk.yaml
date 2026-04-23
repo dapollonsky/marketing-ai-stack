@@ -2,26 +2,20 @@ name: listmonk
 slug: listmonk
 url: https://listmonk.app
 repo: https://github.com/knadh/listmonk
-workflow: substrate
-atom: platform
-rank: canonical
 tags:
   type: app
   ai_nativeness: substrate
   mcp_ready: false
-  automation_depth: assist
 description: >-
-  High-performance, self-hosted newsletter and mailing list manager that ships as a single Go
-  binary with a modern dashboard.
+  High-performance, self-hosted newsletter and mailing list manager that ships as a single Go binary
+  with a modern dashboard.
 why_it_matters: >-
-  The canonical OSS send layer for newsletters — any AI drafting step (skill, agent, or tool)
-  hands finished HTML to listmonk for sending. Scales to any list size without per-subscriber
-  pricing.
+  The canonical OSS send layer for newsletters — any AI drafting step (skill, agent, or tool) hands
+  finished HTML to listmonk for sending. Scales to any list size without per-subscriber pricing.
 closed_alternative: Mailchimp, Campaign Monitor
 stats:
-  stars: 19538
-  last_commit: '2026-04-14'
+  stars: 19596
+  last_commit: '2026-04-21'
   license: AGPL-3.0
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
