@@ -2,14 +2,10 @@ name: Corey Haines Marketing Skills
 slug: coreyhaines-marketingskills
 url: https://github.com/coreyhaines31/marketingskills
 repo: https://github.com/coreyhaines31/marketingskills
-workflow: positioning
-atom: campaign-brief
-rank: alternate
 tags:
   type: skill-pack
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   36 Claude skills across SEO, CRO, copy, paid, growth, sales, and strategy, structured around a
   shared product-marketing-context spine.
@@ -19,9 +15,8 @@ why_it_matters: >-
   frameworks.
 closed_alternative: Jasper Brand Voice
 stats:
-  stars: 21711
-  last_commit: '2026-04-15'
+  stars: 24075
+  last_commit: '2026-04-22'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

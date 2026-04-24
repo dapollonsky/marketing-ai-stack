@@ -2,25 +2,20 @@ name: ALwrity
 slug: alwrity
 url: https://github.com/AJaySi/ALwrity
 repo: https://github.com/AJaySi/ALwrity
-workflow: content
-atom: long-form-drafting
-rank: canonical
 tags:
   type: app
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: augment
 description: >-
   End-to-end AI marketing Streamlit suite covering SEO research, blog drafting, image generation,
   and AI content detection.
 why_it_matters: >-
-  Self-hosted blog drafting that ships the full pipeline: research, outline, SEO scoring,
-  publish. 1 Streamlit app, 20-minute install.
+  Self-hosted blog drafting that ships the full pipeline: research, outline, SEO scoring, publish. 1
+  Streamlit app, 20-minute install.
 closed_alternative: Jasper, Copy.ai, Writer
 stats:
-  stars: 983
-  last_commit: '2026-04-10'
+  stars: 995
+  last_commit: '2026-04-22'
   license: null
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
