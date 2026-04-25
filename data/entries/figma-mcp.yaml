@@ -2,14 +2,10 @@ name: Figma MCP
 slug: figma-mcp
 url: https://github.com/GLips/Figma-Context-MCP
 repo: https://github.com/GLips/Figma-Context-MCP
-workflow: substrate
-atom: mcp-bridge
-rank: canonical
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   Community MCP server that exposes Figma frames, components, and designs to Claude/Cursor for
   design-to-code and creative review workflows.
@@ -19,9 +15,8 @@ why_it_matters: >-
   system.
 closed_alternative: Figma Dev Mode
 stats:
-  stars: 14400
-  last_commit: '2026-04-15'
+  stars: 14512
+  last_commit: '2026-04-20'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

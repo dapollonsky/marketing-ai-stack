@@ -2,25 +2,20 @@ name: LangChain Open Deep Research
 slug: langchain-open-deep-research
 url: https://github.com/langchain-ai/open_deep_research
 repo: https://github.com/langchain-ai/open_deep_research
-workflow: research
-atom: market-scans
-rank: alternate
 tags:
   type: framework
   ai_nativeness: ai-native
   mcp_ready: true
-  automation_depth: augment
 description: >-
-  LangChain's supervisor/researcher multi-agent deep-research scaffold with MCP-native tool use
-  and configurable report structures.
+  LangChain's supervisor/researcher multi-agent deep-research scaffold with MCP-native tool use and
+  configurable report structures.
 why_it_matters: >-
-  Multi-agent research scaffold with MCP-native tool use and configurable report structures.
-  For marketing engineers who want to tune the writer and planner stack.
+  Multi-agent research scaffold with MCP-native tool use and configurable report structures. For
+  marketing engineers who want to tune the writer and planner stack.
 closed_alternative: Perplexity Pro API
 stats:
-  stars: 11100
-  last_commit: '2026-04-12'
+  stars: 11236
+  last_commit: '2026-04-21'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

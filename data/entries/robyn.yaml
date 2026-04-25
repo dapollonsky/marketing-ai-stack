@@ -2,25 +2,20 @@ name: Robyn
 slug: robyn
 url: https://facebookexperimental.github.io/Robyn/
 repo: https://github.com/facebookexperimental/Robyn
-workflow: measurement
-atom: performance-report
-rank: alternate
 tags:
   type: library
   ai_nativeness: substrate
   mcp_ready: false
-  automation_depth: augment
 description: >-
   Meta Marketing Science's experimental open-source Marketing Mix Modeling package built on ridge
   regression, Nevergrad optimization, and time-series decomposition.
 why_it_matters: >-
-  R-based Marketing Mix Modeling library from Meta with ridge regression, Nevergrad
-  optimization, and a large practitioner community. For analytics teams already working in R.
+  R-based Marketing Mix Modeling library from Meta with ridge regression, Nevergrad optimization,
+  and a large practitioner community. For analytics teams already working in R.
 closed_alternative: Nielsen MMM, Analytic Partners
 stats:
-  stars: 1445
+  stars: 1452
   last_commit: '2026-01-26'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
