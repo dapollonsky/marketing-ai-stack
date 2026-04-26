@@ -2,25 +2,20 @@ name: Postal
 slug: postal
 url: https://postalserver.io
 repo: https://github.com/postalserver/postal
-workflow: substrate
-atom: platform
-rank: alternate
 tags:
   type: app
   ai_nativeness: substrate
   mcp_ready: false
-  automation_depth: assist
 description: >-
   Full-featured open-source mail server for outbound sending with bounce tracking, complaint
   handling, and deliverability dashboards.
 why_it_matters: >-
-  The right pick when you need to own the MTA itself — bounce/complaint webhooks are a real
-  alerting substrate for deliverability agents built on top.
+  The right pick when you need to own the MTA itself — bounce/complaint webhooks are a real alerting
+  substrate for deliverability agents built on top.
 closed_alternative: SendGrid, Mailgun, Postmark
 stats:
-  stars: 16500
-  last_commit: '2026-04-10'
+  stars: 16475
+  last_commit: '2026-04-24'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

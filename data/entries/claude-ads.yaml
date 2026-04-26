@@ -2,25 +2,20 @@ name: claude-ads
 slug: claude-ads
 url: https://github.com/AgriciDaniel/claude-ads
 repo: https://github.com/AgriciDaniel/claude-ads
-workflow: paid
-atom: ad-copy-variants
-rank: canonical
 tags:
   type: skill-pack
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
-  Claude skill pack for ad-copy audit and variant generation across Google, Meta, YouTube,
-  LinkedIn, TikTok, Microsoft, and Apple, with weighted scoring and industry templates.
+  Claude skill pack for ad-copy audit and variant generation across Google, Meta, YouTube, LinkedIn,
+  TikTok, Microsoft, and Apple, with weighted scoring and industry templates.
 why_it_matters: >-
   Claude skill pack for ad copy audit and variant generation. Covers Google, Meta, YouTube,
   LinkedIn, TikTok, Microsoft, and Apple with weighted scoring. 2.6k stars, narrow scope.
 closed_alternative: Copy.ai, Anyword, AdCreative.ai
 stats:
-  stars: 2610
-  last_commit: '2026-04-16'
+  stars: 3132
+  last_commit: '2026-04-24'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

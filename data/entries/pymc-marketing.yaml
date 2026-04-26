@@ -2,26 +2,20 @@ name: PyMC-Marketing
 slug: pymc-marketing
 url: https://www.pymc-marketing.io
 repo: https://github.com/pymc-labs/pymc-marketing
-workflow: measurement
-atom: performance-report
-rank: canonical
 tags:
   type: library
   ai_nativeness: substrate
   mcp_ready: false
-  automation_depth: augment
 description: >-
   Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC, with
   media-saturation and adstock transforms baked in.
 why_it_matters: >-
-  Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC.
-  Python-native, actively developed by PyMC Labs. Media-saturation and adstock transforms baked
-  in.
+  Bayesian Marketing Mix Modeling and Customer Lifetime Value toolkit built on PyMC. Python-native,
+  actively developed by PyMC Labs. Media-saturation and adstock transforms baked in.
 closed_alternative: Nielsen MMM, Analytic Partners
 stats:
-  stars: 1100
-  last_commit: '2026-04-16'
+  stars: 1129
+  last_commit: '2026-04-26'
   license: Apache-2.0
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

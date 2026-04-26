@@ -2,14 +2,10 @@ name: Reddit Research MCP
 slug: reddit-research-mcp
 url: https://github.com/king-of-the-grackles/reddit-research-mcp
 repo: https://github.com/king-of-the-grackles/reddit-research-mcp
-workflow: research
-atom: customer-voice-extraction
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
   MCP server that runs semantic search across 20,000+ subreddits, returning posts and comments
   ranked by relevance with citations.
@@ -18,9 +14,8 @@ why_it_matters: >-
   language, objections, and phrasing from outside your own customer base.
 closed_alternative: Reddit Pro, GummySearch
 stats:
-  stars: 105
-  last_commit: '2025-12-11'
+  stars: 108
+  last_commit: '2026-04-21'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
