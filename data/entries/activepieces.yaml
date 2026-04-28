@@ -2,25 +2,20 @@ name: Activepieces
 slug: activepieces
 url: https://www.activepieces.com
 repo: https://github.com/activepieces/activepieces
-workflow: substrate
-atom: orchestrator
-rank: alternate
 tags:
   type: app
   ai_nativeness: ai-enabled
   mcp_ready: false
-  automation_depth: automate
 description: >-
-  Open-source no-code orchestrator positioned as a Zapier alternative with MIT-licensed pieces
-  and an AI-agents module.
+  Open-source no-code orchestrator positioned as a Zapier alternative with MIT-licensed pieces and
+  an AI-agents module.
 why_it_matters: >-
   Different tradeoff from n8n — simpler UI, MIT-friendly piece licensing. The pick for teams who
   want the cleanest Zapier-alike experience without n8n's learning curve.
 closed_alternative: Zapier, Make
 stats:
-  stars: 21800
-  last_commit: '2026-04-15'
+  stars: 21947
+  last_commit: '2026-04-28'
   license: NOASSERTION
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
 status: active

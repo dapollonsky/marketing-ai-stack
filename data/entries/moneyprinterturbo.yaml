@@ -2,25 +2,20 @@ name: MoneyPrinterTurbo
 slug: moneyprinterturbo
 url: https://github.com/harry0703/MoneyPrinterTurbo
 repo: https://github.com/harry0703/MoneyPrinterTurbo
-workflow: social
-atom: long-to-shorts
-rank: canonical
 tags:
   type: app
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   One-click AI short-video generator that chains script, TTS, stock footage, and subtitles into a
   finished vertical video.
 why_it_matters: >-
-  One-click AI short-video pipeline. Script, TTS, stock footage, subtitles, output. 55k stars,
-  the category leader by a 100x margin.
+  One-click AI short-video pipeline. Script, TTS, stock footage, subtitles, output. 55k stars, the
+  category leader by a 100x margin.
 closed_alternative: Submagic, Opus Clip
 stats:
-  stars: 55751
-  last_commit: '2026-04-11'
+  stars: 56488
+  last_commit: '2026-04-22'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
