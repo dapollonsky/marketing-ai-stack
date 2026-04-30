@@ -2,25 +2,20 @@ name: FireGEO
 slug: firegeo
 url: https://github.com/firecrawl/firegeo
 repo: https://github.com/firecrawl/firegeo
-workflow: research
-atom: competitor-monitoring
-rank: alternate
 tags:
   type: template
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: augment
 description: >-
-  Firecrawl's open starter for monitoring how a brand and competitors appear inside ChatGPT,
-  Claude, and Perplexity answers over time.
+  Firecrawl's open starter for monitoring how a brand and competitors appear inside ChatGPT, Claude,
+  and Perplexity answers over time.
 why_it_matters: >-
   Firecrawl starter for tracking brand and competitor citations inside ChatGPT, Claude, and
   Perplexity answers. Best when GEO visibility is the KPI, not web pages.
 closed_alternative: Profound, AthenaHQ
 stats:
-  stars: 621
-  last_commit: '2026-04-12'
+  stars: 627
+  last_commit: '2025-07-21'
   license: MIT
 submitted: '2026-04-17'
-last_reviewed: '2026-04-17'
-status: active
+status: watchlist

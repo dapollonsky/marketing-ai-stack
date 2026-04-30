@@ -2,25 +2,20 @@ name: Google Ads MCP
 slug: google-ads-mcp
 url: https://github.com/googleads/google-ads-mcp
 repo: https://github.com/googleads/google-ads-mcp
-workflow: paid
-atom: budget-rebalancing
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: augment
 description: >-
-  Official Google Ads MCP exposing campaigns, budgets, keywords, ad groups, and performance
-  queries through first-party tools.
+  Official Google Ads MCP exposing campaigns, budgets, keywords, ad groups, and performance queries
+  through first-party tools.
 why_it_matters: >-
   Google's first-party Apache-2.0 MCP covering campaigns, budgets, keywords, ad groups, and
   performance queries. Covers Search and Performance Max alongside Meta Ads MCP.
 closed_alternative: Google Ads UI
 stats:
-  stars: 377
-  last_commit: '2026-04-10'
+  stars: 412
+  last_commit: '2026-04-29'
   license: Apache-2.0
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active

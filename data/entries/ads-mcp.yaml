@@ -2,25 +2,20 @@ name: Ads MCP (multi-platform)
 slug: ads-mcp
 url: https://github.com/amekala/ads-mcp
 repo: https://github.com/amekala/ads-mcp
-workflow: paid
-atom: budget-rebalancing
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: augment
 description: >-
   Single MCP server covering Google, Meta, LinkedIn, and TikTok Ads with 100+ tools for campaigns,
   creatives, and performance reporting.
 why_it_matters: >-
-  Single MCP covering Google, Meta, LinkedIn, and TikTok Ads through one endpoint. Tradeoff is
-  lower per-platform fidelity. For agents that need unified multi-channel access.
+  Single MCP covering Google, Meta, LinkedIn, and TikTok Ads through one endpoint. Tradeoff is lower
+  per-platform fidelity. For agents that need unified multi-channel access.
 closed_alternative: Madgicx, Northbeam
 stats:
-  stars: 30
-  last_commit: '2026-04-02'
+  stars: 37
+  last_commit: '2026-04-28'
   license: null
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
