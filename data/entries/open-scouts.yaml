@@ -2,14 +2,10 @@ name: Open Scouts
 slug: open-scouts
 url: https://openscouts.firecrawl.dev
 repo: https://github.com/firecrawl/open-scouts
-workflow: research
-atom: competitor-monitoring
-rank: canonical
 tags:
   type: agent
   ai_nativeness: ai-native
   mcp_ready: false
-  automation_depth: automate
 description: >-
   Firecrawl's open AI web-monitoring platform where you spin up scouts that crawl the web on a
   schedule and email alerts when they find what you defined.
@@ -18,9 +14,8 @@ why_it_matters: >-
   inbox deliverable, not another dashboard to check.
 closed_alternative: Crayon, Kompyte, Google Alerts
 stats:
-  stars: 1271
+  stars: 1275
   last_commit: '2026-01-30'
   license: null
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
