@@ -2,26 +2,20 @@ name: Contentful MCP
 slug: contentful-mcp
 url: https://github.com/contentful/contentful-mcp-server
 repo: https://github.com/contentful/contentful-mcp-server
-workflow: substrate
-atom: mcp-bridge
-rank: alternate
 tags:
   type: mcp
   ai_nativeness: ai-enabled
   mcp_ready: true
-  automation_depth: automate
 description: >-
-  Official Contentful MCP server for the Contentful Management API, giving agents access to
-  spaces, content types, entries, and assets.
+  Official Contentful MCP server for the Contentful Management API, giving agents access to spaces,
+  content types, entries, and assets.
 why_it_matters: >-
-  Lets a marketing team query, draft, and publish headless CMS entries from any MCP-compatible
-  agent so localization edits and campaign updates do not require shuttling tickets through
-  engineering.
+  Lets a marketing team query, draft, and publish headless CMS entries from any MCP-compatible agent
+  so localization edits and campaign updates do not require shuttling tickets through engineering.
 closed_alternative: Contentful web app
 stats:
-  stars: 50
-  last_commit: '2026-04-14'
+  stars: 52
+  last_commit: '2026-04-23'
   license: MIT
 submitted: '2026-04-15'
-last_reviewed: '2026-04-17'
 status: active
